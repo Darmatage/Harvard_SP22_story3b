@@ -21,6 +21,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene3b.unity
     guid: 4cc49dcc9fba83149a73d3b8dd0265cd
   - enabled: 1
+    path: Assets/Scenes/EndScene3.unity
+    guid: ffbcf316189f649bd87dff93457f7fcc
+  - enabled: 1
+    path: Assets/Scenes/EndScene4.unity
+    guid: a2e7532e899124137a7527a413bdfa2d
+  - enabled: 1
+    path: Assets/Scenes/EndScene5.unity
+    guid: 6f3038b67c093429ab2def31a7cd9a2a
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Scene4d.unity
+    guid: 10932501c5c8e4843aa66dc644d61569
+  - enabled: 1
     path: Assets/Scenes/Scene4b.unity
     guid: 669199c54bcb65b42b62ecf21def8f66
   - enabled: 1
