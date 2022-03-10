@@ -11,26 +11,60 @@ public class GameHandler : MonoBehaviour
     public static bool playerStat = true;
     //public GameObject textGameObject;
 
+
+    public static bool GameisPaused = false;
+    public GameObject pauseMenuUI;
+    // pause menu
+
+    void Start()
+    {
+        pauseMenuUI.SetActive(false);
+        GameisPaused = false;
+    }
+
+
     //void Start () { UpdateScore (); }
 
     void Update()
-    {         //delete this quit functionality when a Pause Menu is added
-        if (Input.GetKey("escape"))
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit();
+            if (GameisPaused)
+            {
+                Resume();
+            }
+            else
+            {
+                Pause();
+            }
         }
     }
 
-   // public void UpdatePlayerStat(int amount)
-   // {
+    void Pause()
+    {
+        pauseMenuUI.SetActive(true);
+        Time.timeScale = 0f;
+        GameisPaused = true;
+    }
+
+    public void Resume()
+    {
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        GameisPaused = false;
+    }
+
+
+    // public void UpdatePlayerStat(int amount)
+    // {
     //    playerStat += amount;
-     //   Debug.Log("Current Player Stat = " + playerStat);
-        //      UpdateScore ();
-  //  }
+    //   Debug.Log("Current Player Stat = " + playerStat);
+    //      UpdateScore ();
+    //  }
 
     //public int CheckPlayerStat()
-   // {
-   //     return playerStat;
+    // {
+    //     return playerStat;
     //}
 
     //void UpdateScore () {
