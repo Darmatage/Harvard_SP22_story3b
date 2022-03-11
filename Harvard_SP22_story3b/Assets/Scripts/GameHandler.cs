@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class GameHandler : MonoBehaviour
 {
@@ -14,7 +15,22 @@ public class GameHandler : MonoBehaviour
 
     public static bool GameisPaused = false;
     public GameObject pauseMenuUI;
+    public AudioMixer mixer;
+    public static float volumeLevel = 1.0f;
+    private Slider sliderVolumeCtrl;
     // pause menu
+
+
+    void Awake()
+    {
+        SetLevel(volumeLevel);
+        GameObject sliderTemp = GameObject.FindWithTag("PauseMenuSlider");
+        if (sliderTemp != null)
+        {
+            sliderVolumeCtrl = sliderTemp.GetComponent<Slider>();
+            sliderVolumeCtrl.value = volumeLevel;
+        }
+    }
 
     void Start()
     {
@@ -54,6 +70,11 @@ public class GameHandler : MonoBehaviour
         GameisPaused = false;
     }
 
+    public void SetLevel(float sliderValue)
+    {
+        mixer.SetFloat("MusicVolume", Mathf.Log10(sliderValue) * 20);
+        volumeLevel = sliderValue;
+    }
 
     // public void UpdatePlayerStat(int amount)
     // {
