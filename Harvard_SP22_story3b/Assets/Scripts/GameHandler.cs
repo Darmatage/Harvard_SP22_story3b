@@ -34,8 +34,8 @@ public class GameHandler : MonoBehaviour
 
     void Start()
     {
-    //    pauseMenuUI.SetActive(false);
-    //    GameisPaused = false;
+       pauseMenuUI.SetActive(false);
+        GameisPaused = false;
     }
 
 
@@ -105,7 +105,8 @@ public class GameHandler : MonoBehaviour
 
     public void RestartGame()
     {
-        SceneManager.LoadScene("MainMenu");
+        Time.timeScale=1f;
+		SceneManager.LoadScene("MainMenu");
     }
 
     public void QuitGame()
