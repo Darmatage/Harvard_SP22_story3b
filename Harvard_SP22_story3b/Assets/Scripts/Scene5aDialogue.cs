@@ -307,10 +307,10 @@ public void talking(){         // main story function. Players hit next to progr
         public void SceneChange2(){
                 if(GameHandler.playerStat==false){
 					
-				SceneManager.LoadScene("sceneEnd4");
+				SceneManager.LoadScene("EndScene4");
 				}
 				else if(GameHandler.playerStat==true){
-					SceneManager.LoadScene("sceneEnd5");
+					SceneManager.LoadScene("EndScene5");
 				}
 				nextButton.SetActive(false);
 				allowSpace=false;

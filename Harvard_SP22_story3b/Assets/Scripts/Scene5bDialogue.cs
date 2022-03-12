@@ -25,8 +25,10 @@ public class Scene5bDialogue : MonoBehaviour {
 		public GameObject ButtonScene3c;
         public GameObject nextButton;
        public GameHandler gameHandler;
-       //public AudioSource audioSource;
+	   //public GameObject MusicManager;
+       public AudioSource MusicManager;
         private bool allowSpace = true;
+		
 
 void Start(){         // initial visibility settings
         Choice1a.SetActive(false);
@@ -40,9 +42,7 @@ void Start(){         // initial visibility settings
 		ButtonScene3c.SetActive(false);
         DialogueDisplay.SetActive(false);
 		ArtBG1.SetActive(true);
-        
-        
-		
+        	
    }
 
 void Update(){         // use spacebar as Next button
@@ -58,18 +58,22 @@ public void talking(){         // main story function. Players hit next to progr
         primeInt = primeInt + 1;
         if (primeInt == 1){
                 // AudioSource.Play();
-				GameHandler.playerStat=false;
+				//GameHandler.playerStat=false;
         }
         else if (primeInt == 2){
 			   // ArtChar1.SetActive(true);
+			   GameHandler.playerStat=false;
                 DialogueDisplay.SetActive(true);
+				Char1speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(5f);
                 Char1name.text = "YOU";
                 Char1speech.text = "SALLY WATCH OUT! CHEF BEHIND YOU!";
                 Char2name.text = "";
                 Char2speech.text = "";
+				
         }
        else if (primeInt ==3){
-                sallyshouting.SetActive(true);
+                Char1speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(5f);
+				sallyshouting.SetActive(true);
 				Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "SALLY";
@@ -82,15 +86,18 @@ public void talking(){         // main story function. Players hit next to progr
         }
 		else if (primeInt == 4){
 			   // ArtChar1.SetActive(true);
-			    sallyshouting.SetActive(false);
+			    Char1speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(0f);
+				sallyshouting.SetActive(false);
                 DialogueDisplay.SetActive(true);
-                Char1name.text = "YOU";
+                MusicManager.Play();
+				Char1name.text = "YOU";
                 Char1speech.text = "Eww!";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
 		else if (primeInt ==5){
-                ArtChar1.SetActive(true);
+                Char1speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(0f);
+				ArtChar1.SetActive(true);
 				Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "SALLY";
@@ -103,6 +110,7 @@ public void talking(){         // main story function. Players hit next to progr
 		       
       
 	  else if (primeInt == 104){
+				Char1speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(0f);
 				DialogueDisplay.SetActive(true); 
 				Choice1a.SetActive(false); // function Choice1aFunct()
                 Choice1b.SetActive(false);
@@ -116,7 +124,8 @@ public void talking(){         // main story function. Players hit next to progr
                Char2speech.text = "I told you to get the cheese...";
 	  }
 	  else if (primeInt == 105){
-               sallyshouting.SetActive(false);
+               Char1speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(0f);
+			   sallyshouting.SetActive(false);
 			   ArtChar1.SetActive(false);
 			   Char1name.text = "YOU";
                Char1speech.text = "NO! You SAID to get cake!";
@@ -124,20 +133,23 @@ public void talking(){         // main story function. Players hit next to progr
                Char2speech.text = "";
 	  }
 	  else if (primeInt == 106){
-               ArtChar1.SetActive(true);
+               Char1speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(0f);
+			   ArtChar1.SetActive(true);
 			   Char1name.text = "";
                Char1speech.text = "";
                Char2name.text = "Sally";
                Char2speech.text = "Whatever!";
 	  }
 	  else if (primeInt == 107){
-               ArtChar1.SetActive(false);
+               Char1speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(0f);
+			   ArtChar1.SetActive(false);
 			   Char1name.text = "YOU";
                Char1speech.text = "Now what do we do?";
                Char2name.text = "";
                Char2speech.text = "";
 	  }
       else if (primeInt == 108){
+		  Char1speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(0f);
                sallydissatisfied.SetActive(true);
 			   Char1name.text = "";
                Char1speech.text = "";
@@ -150,6 +162,7 @@ public void talking(){         // main story function. Players hit next to progr
               // DialogueDisplay.SetActive(false);
        }
 	else if (primeInt == 109){
+		Char1speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(0f);
                sallydissatisfied.SetActive(false);
 			   sallyshouting.SetActive(false);
 			   Char1name.text = "YOU";
@@ -160,7 +173,7 @@ public void talking(){         // main story function. Players hit next to progr
 	          
 	  }
 	   else if (primeInt == 110){
-		   
+		   Char1speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(0f);
 			   //Choice1b.SetActive(true);
 		   sallydissatisfied.SetActive(true);
 			   sallyshouting.SetActive(false);
@@ -180,6 +193,7 @@ public void talking(){         // main story function. Players hit next to progr
 		  }
 	  
 	  else if (primeInt == 203){
+		  Char1speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(0f);
                DialogueDisplay.SetActive(true);
 			   sallyshouting.SetActive(false);
 			   ArtChar1.SetActive(false);
@@ -274,6 +288,7 @@ else if (primeInt == 212){
 }
 //FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
        public void Choice1aFunct(){
+		   Char1speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(0f);
                DialogueDisplay.SetActive(true);	   
 			   //GameHandler.playerStat =GameHandler.playerStat+1;
 			   sallyshouting.SetActive(false);
@@ -289,6 +304,7 @@ else if (primeInt == 212){
                allowSpace = true;
        }
        public void Choice1bFunct(){
+		   Char1speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(0f);
                //GameHandler.playerStat +=1;
 			   DialogueDisplay.SetActive(true);	
 			   sallyshouting.SetActive(false);
@@ -305,7 +321,7 @@ else if (primeInt == 212){
        }
 
         public void SceneChange1(){
-			    SceneManager.LoadScene("endScene3");
+			    SceneManager.LoadScene("EndScene3");
         }
         public void SceneChange2(){
                 SceneManager.LoadScene("Scene3a");

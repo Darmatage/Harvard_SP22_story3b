@@ -70,7 +70,7 @@ public void talking(){         // main story function. Players hit next to progr
 			    ArtChar1.SetActive(false);
               DialogueDisplay.SetActive(true);
                Char1name.text = "YOU";
-                Char1speech.text = "Coffee!";
+                Char1speech.text = "Coffee?";
                 Char2name.text = "";
                Char2speech.text = "";
        }
@@ -88,7 +88,7 @@ public void talking(){         // main story function. Players hit next to progr
 			    smilingmouse.SetActive(false);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "YOU";
-                Char1speech.text = "Almond milk!";
+                Char1speech.text = "Almond milk?";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -193,7 +193,7 @@ public void talking(){         // main story function. Players hit next to progr
 			   Char1name.text = "";
                Char1speech.text = "";
                Char2name.text = "Sally";
-               Char2speech.text = "OF COURSE! The Chef will see you pick-pocketing, and YOU will ruin a good day!";
+               Char2speech.text = "OF COURSE! The Chef will see stealing sweetener from his pocket, and YOU will ruin a good day!";
 			  // nextButton.SetActive(false);
              //  allowSpace = false;
 			//	Choice2a.SetActive(true); // function Choice1aFunct()
