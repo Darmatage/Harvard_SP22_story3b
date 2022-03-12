@@ -19,7 +19,7 @@ public class GameHandler : MonoBehaviour
     public static float volumeLevel = 1.0f;
     private Slider sliderVolumeCtrl;
     // pause menu
-
+    public static string playerName = "YOU";
 
     void Awake()
     {
@@ -91,6 +91,16 @@ public class GameHandler : MonoBehaviour
     //void UpdateScore () {
     //        Text scoreTemp = textGameObject.GetComponent<Text>();
     //        scoreTemp.text = "Score: " + score; }
+
+    public void UpdateName(string newName)
+    {
+        playerName = newName;
+        Debug.Log("name changed to " + playerName);
+    }
+    public string GetName()
+    {
+        return playerName;
+    }
 
     public void StartGame()
     {
