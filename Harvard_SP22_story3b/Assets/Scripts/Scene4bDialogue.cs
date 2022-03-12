@@ -291,7 +291,7 @@ public void talking(){         // main story function. Players hit next to progr
 			   smilingmouse.SetActive(false);
 			   sallyDissatisfied.SetActive(false);
 			   Char1name.text = "YOU";
-               Char1speech.text = "You shall witness my sneaky pick-pocketing!";
+               Char1speech.text = "Yes I remember he's been hiding them there, because his spouse would rather have him eat regular sugar.";
                Char2name.text = "";
                Char2speech.text = "";
 	   }
@@ -314,7 +314,7 @@ public void talking(){         // main story function. Players hit next to progr
 	           ButtonScene3b.SetActive(true);
                nextButton.SetActive(false);
                allowSpace = false;
-              DialogueDisplay.SetActive(false);
+              //DialogueDisplay.SetActive(false);
 	 }
 }
 //FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)

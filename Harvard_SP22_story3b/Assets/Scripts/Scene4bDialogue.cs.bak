@@ -291,7 +291,7 @@ public void talking(){         // main story function. Players hit next to progr
 			   smilingmouse.SetActive(false);
 			   sallyDissatisfied.SetActive(false);
 			   Char1name.text = "YOU";
-               Char1speech.text = "You shall witness my sneaky pick-pocketing!";
+               Char1speech.text = "Yes I remember he's been hiding them there, because his spouse would rather have him eat regular sugar.";
                Char2name.text = "";
                Char2speech.text = "";
 	   }
@@ -373,9 +373,13 @@ public void talking(){         // main story function. Players hit next to progr
        }
 
         public void SceneChange1(){
-			    SceneManager.LoadScene("SceneEnd1");
+			    SceneManager.LoadScene("EndScene1");
+				nextButton.SetActive(false);
+				allowSpace=false;
         }
         public void SceneChange2(){
                 SceneManager.LoadScene("Scene5a");
+				nextButton.SetActive(false);
+				allowSpace=false;
 }
 }

@@ -206,7 +206,7 @@ public void talking(){         // main story function. Players hit next to progr
               // Char1speech.text = "";
               // Char2name.text = "Sally";
               // Char2speech.text = "Is your nose growing superpowers? IT IS cheese!";
-	  }
+	  
 	  else if (primeInt == 201){
                smilingmouse.SetActive(false);
 			   Char1name.text = "YOU";
@@ -312,9 +312,9 @@ public void talking(){         // main story function. Players hit next to progr
        }
 
         public void SceneChange1(){
-			    SceneManager.LoadScene("Scene3a");
+			    SceneManager.LoadScene("Scene4d");
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("Scene3b");
+                SceneManager.LoadScene("Scene4c");
 }
 }

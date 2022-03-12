@@ -305,7 +305,13 @@ public void talking(){         // main story function. Players hit next to progr
 				allowSpace=false;
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("sceneEnd4");
+                if(GameHandler.playerStat==false){
+					
+				SceneManager.LoadScene("sceneEnd4");
+				}
+				else if(GameHandler.playerStat==true){
+					SceneManager.LoadScene("sceneEnd5");
+				}
 				nextButton.SetActive(false);
 				allowSpace=false;
 }

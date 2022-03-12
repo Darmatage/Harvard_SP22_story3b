@@ -259,7 +259,7 @@ public void talking(){         // main story function. Players hit next to progr
                allowSpace = false;
               ButtonScene3a.SetActive(true);
 			ButtonScene3b.SetActive(true);
-			DialogueDisplay.SetActive(false);
+			//DialogueDisplay.SetActive(false);
         }
      }
 
