@@ -8,6 +8,9 @@ using UnityEngine.Audio;
 public class Scene1Conversation : MonoBehaviour
 {
     public int primeInt = 1;         // This integer drives game progress!
+    public string playerName;
+  
+    public GameHandler gameHandler; 
     public Text Char1name;
     public Text Char1speech;
     public Text Char2name;
@@ -29,6 +32,11 @@ public class Scene1Conversation : MonoBehaviour
    
     void Start()
     {         // initial visibility settings
+        // Get player name
+        string pNameTemp= gameHandler.GetName();
+        playerName = pNameTemp.ToUpper();
+
+
         ArtChar1.SetActive(false);
 		SallyHalfAwake.SetActive(false);
 		DialogueDisplay.SetActive(false);
@@ -59,6 +67,7 @@ public class Scene1Conversation : MonoBehaviour
     //Story Units:
     public void talking()
     {         // main story function. Players hit next to progress to next int
+       
         primeInt = primeInt + 1;
         if (primeInt == 1)
         {
@@ -68,7 +77,7 @@ public class Scene1Conversation : MonoBehaviour
         {
             ArtChar1.SetActive(false);
             DialogueDisplay.SetActive(true);
-            Char1name.text = "YOU";
+            Char1name.text = playerName;
             Char1speech.text = "Wakey wakey, Sally";
             Char2name.text = "";
             Char2speech.text = "";
