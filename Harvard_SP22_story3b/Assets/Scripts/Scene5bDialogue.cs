@@ -25,6 +25,7 @@ public class Scene5bDialogue : MonoBehaviour {
 		public GameObject ButtonScene3c;
         public GameObject nextButton;
        public GameHandler gameHandler;
+	   public string playerName;
 	   //public GameObject MusicManager;
        public AudioSource MusicManager;
         private bool allowSpace = true;
@@ -42,6 +43,8 @@ void Start(){         // initial visibility settings
 		ButtonScene3c.SetActive(false);
         DialogueDisplay.SetActive(false);
 		ArtBG1.SetActive(true);
+		string pNameTemp = gameHandler.GetName();
+       playerName = pNameTemp.ToUpper();
         	
    }
 
@@ -65,7 +68,7 @@ public void talking(){         // main story function. Players hit next to progr
 			   GameHandler.playerStat=false;
                 DialogueDisplay.SetActive(true);
 				Char1speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(5f);
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "SALLY WATCH OUT! CHEF BEHIND YOU!";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -90,7 +93,7 @@ public void talking(){         // main story function. Players hit next to progr
 				sallyshouting.SetActive(false);
                 DialogueDisplay.SetActive(true);
                 MusicManager.Play();
-				Char1name.text = "YOU";
+				Char1name.text = playerName;
                 Char1speech.text = "Eww!";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -127,7 +130,7 @@ public void talking(){         // main story function. Players hit next to progr
                Char1speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(0f);
 			   sallyshouting.SetActive(false);
 			   ArtChar1.SetActive(false);
-			   Char1name.text = "YOU";
+			   Char1name.text = playerName;
                Char1speech.text = "NO! You SAID to get cake!";
                Char2name.text = "";
                Char2speech.text = "";
@@ -143,7 +146,7 @@ public void talking(){         // main story function. Players hit next to progr
 	  else if (primeInt == 107){
                Char1speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(0f);
 			   ArtChar1.SetActive(false);
-			   Char1name.text = "YOU";
+			   Char1name.text = playerName;
                Char1speech.text = "Now what do we do?";
                Char2name.text = "";
                Char2speech.text = "";
@@ -165,7 +168,7 @@ public void talking(){         // main story function. Players hit next to progr
 		Char1speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(0f);
                sallydissatisfied.SetActive(false);
 			   sallyshouting.SetActive(false);
-			   Char1name.text = "YOU";
+			   Char1name.text = playerName;
                Char1speech.text = "I’m not so eager on eating something I’ve jumped into. Let’s just go to the pantry.";
                Char2name.text = "";
                Char2speech.text = "";
@@ -212,7 +215,7 @@ public void talking(){         // main story function. Players hit next to progr
 	  }
 	  else if (primeInt == 205){
                ArtChar1.SetActive(false);
-			   Char1name.text = "YOU";
+			   Char1name.text = playerName;
                Char1speech.text = "Excuse me?";
                Char2name.text = "";
                Char2speech.text = "";
@@ -228,7 +231,7 @@ public void talking(){         // main story function. Players hit next to progr
 	else if (primeInt == 207){
                ArtChar1.SetActive(false);
 			   sallyshouting.SetActive(false);
-			   Char1name.text = "YOU";
+			   Char1name.text = playerName;
                Char1speech.text = "Ahem...ahem...oh yes...cheese...";
                Char2name.text = "";
                Char2speech.text = "";
@@ -242,7 +245,7 @@ public void talking(){         // main story function. Players hit next to progr
 	   }
 	   else if (primeInt == 209){
                ArtChar1.SetActive(false);
-			   Char1name.text = "YOU";
+			   Char1name.text = playerName;
                Char1speech.text = "Didn’t your mother ever warn you about eating food off the floor?";
                Char2name.text = "";
                Char2speech.text = "";
@@ -261,7 +264,7 @@ public void talking(){         // main story function. Players hit next to progr
 	   } 
 		else if (primeInt == 211){
                sallyshouting.SetActive(false);
-			   Char1name.text = "YOU";
+			   Char1name.text = playerName;
                Char1speech.text = "Fresh cake vs cheese under the table...Really?";
                Char2name.text = "";
                Char2speech.text = "";
@@ -269,7 +272,7 @@ public void talking(){         // main story function. Players hit next to progr
 	   }	
 else if (primeInt == 212){
               // sallyshouting.SetActive(false);
-			  // Char1name.text = "YOU";
+			  // Char1name.text = playerName;
              //  Char1speech.text = "Fresh cake vs cheese under the table...Really?";
             //   Char2name.text = "";
             //   Char2speech.text = "";
@@ -309,7 +312,7 @@ else if (primeInt == 212){
 			   DialogueDisplay.SetActive(true);	
 			   sallyshouting.SetActive(false);
 			   ArtChar1.SetActive(false);
-			   Char1name.text = "YOU";
+			   Char1name.text = playerName;
                Char1speech.text = "My bad, Sally. I should have listened to you and gotten the cheese.";
                Char2name.text = "";
                Char2speech.text = "";

@@ -23,9 +23,7 @@ public class Scene4aDialogue : MonoBehaviour
     public GameObject NextScene1Button;
     //public GameObject NextScene2Button;
     public GameObject nextButton;
-    public GameHandler gameHandler;
-	 public string playerName;
-       //public GameHandler gameHandler;
+    //public GameHandler gameHandler;
     //public AudioSource audioSource;
     private bool allowSpace = true;
 
@@ -41,8 +39,6 @@ public class Scene4aDialogue : MonoBehaviour
 
         ArtBG1.SetActive(true);
         nextButton.SetActive(true);
-		    string pNameTemp = gameHandler.GetName();
-       playerName = pNameTemp.ToUpper();
 
     }
 

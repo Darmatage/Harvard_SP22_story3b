@@ -26,6 +26,8 @@ public class Scene3aDialogue : MonoBehaviour
     //public GameHandler gameHandler;
     //public AudioSource audioSource;
     private bool allowSpace = true;
+	 public string playerName;
+       public GameHandler gameHandler;
 
     void Start()
     {         // initial visibility settings
@@ -39,6 +41,8 @@ public class Scene3aDialogue : MonoBehaviour
 
         ArtBG1.SetActive(true);
         nextButton.SetActive(true);
+		string pNameTemp = gameHandler.GetName();
+       playerName = pNameTemp.ToUpper();
 
     }
 
@@ -67,7 +71,7 @@ public class Scene3aDialogue : MonoBehaviour
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(false);
             DialogueDisplay.SetActive(true);
-            Char1name.text = "YOU";
+            Char1name.text = playerName;
             Char1speech.text = "The pantry I’m waiting for! ";
             Char2name.text = "";
             Char2speech.text = "";
@@ -86,7 +90,7 @@ public class Scene3aDialogue : MonoBehaviour
         {
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(false);
-            Char1name.text = "YOU";
+            Char1name.text = playerName;
             Char1speech.text = "Sally, when did you get blind?";
             Char2name.text = "";
             Char2speech.text = "";
@@ -105,7 +109,7 @@ public class Scene3aDialogue : MonoBehaviour
         {
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(false);
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = "Ah no, your stinky little place needs a window. ";
             Char2name.text = "";
             Char2speech.text = "";
@@ -123,7 +127,7 @@ public class Scene3aDialogue : MonoBehaviour
         {
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(false);
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = "You’ve been saying that for weeks.  ";
             Char2name.text = "";
             Char2speech.text = "";
@@ -142,7 +146,7 @@ public class Scene3aDialogue : MonoBehaviour
         {
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(false);
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = "Where is it?";
             Char2name.text = "";
             Char2speech.text = "";
@@ -163,7 +167,7 @@ public class Scene3aDialogue : MonoBehaviour
         {
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(false);
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = "Not helpful! ";
             Char2name.text = "";
             Char2speech.text = "";
@@ -183,7 +187,7 @@ public class Scene3aDialogue : MonoBehaviour
         {
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(false);
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = "Hm. Let’s go up and see!";
             Char2name.text = "";
             Char2speech.text = "";
@@ -202,7 +206,7 @@ public class Scene3aDialogue : MonoBehaviour
         {
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(false);
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = "Sniffs like roasted coffee beans.";
             Char2name.text = "";
             Char2speech.text = "";
@@ -222,7 +226,7 @@ public class Scene3aDialogue : MonoBehaviour
         {
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(false);
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = "Should we head back and make coffee, OR should we head to the fridge for milk?”";
             Char2name.text = "";
             Char2speech.text = "";
@@ -238,7 +242,7 @@ public class Scene3aDialogue : MonoBehaviour
         // ENCOUNTER AFTER CHOICE #1
         else if (primeInt == 100)
         {
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = "Will you hurry up?";
             Char2name.text = "";
             Char2speech.text = "";
@@ -252,7 +256,7 @@ public class Scene3aDialogue : MonoBehaviour
         }
         else if (primeInt == 102)
         {
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = "Do you see anyone else here?";
             Char2name.text = "";
             Char2speech.text = "";
@@ -268,7 +272,7 @@ public class Scene3aDialogue : MonoBehaviour
 
         else if (primeInt == 104)
         {
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = " That’s a good idea. ";
             Char2name.text = "";
             Char2speech.text = "";
@@ -285,7 +289,7 @@ public class Scene3aDialogue : MonoBehaviour
 
         else if (primeInt == 106)
         {
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = " Ah,fine. You are the smartest mouse in the whole wide world!";
             Char2name.text = "";
             Char2speech.text = "";
@@ -302,7 +306,7 @@ public class Scene3aDialogue : MonoBehaviour
 
         else if (primeInt == 108)
         {
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = "Hm, seems like you are more into it than I am.";
             Char2name.text = "";
             Char2speech.text = "";
@@ -313,7 +317,7 @@ public class Scene3aDialogue : MonoBehaviour
         //ENCOUNTER AFTER CHOICE #2
         else if (primeInt == 200)
         {
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = "Do you like the cold?";
             Char2name.text = "";
             Char2speech.text = "";
@@ -329,7 +333,7 @@ public class Scene3aDialogue : MonoBehaviour
 
         else if (primeInt == 202)
         {
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = "Yeah, right. ";
             Char2name.text = "";
             Char2speech.text = "";
@@ -345,7 +349,7 @@ public class Scene3aDialogue : MonoBehaviour
 
         else if (primeInt == 204)
         {
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = "I don’t see you on the cover of the Mice Times.";
             Char2name.text = "";
             Char2speech.text = "";
@@ -362,7 +366,7 @@ public class Scene3aDialogue : MonoBehaviour
 
         else if (primeInt == 206)
         {
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = "Well, then the fridge would be a piece of cake.";
             Char2name.text = "";
             Char2speech.text = "";

@@ -263,6 +263,8 @@ MonoBehaviour:
   ButtonScene3a: {fileID: 849686416}
   ButtonScene3b: {fileID: 1464507516}
   nextButton: {fileID: 1145157488}
+  gameHandler: {fileID: 1106612191}
+  playerName: 
 --- !u!1 &123740692
 GameObject:
   m_ObjectHideFlags: 0

@@ -33,9 +33,7 @@ public class Scene1Conversation : MonoBehaviour
     void Start()
     {         // initial visibility settings
         // Get player name
-        string pNameTemp= gameHandler.GetName();
-        playerName = pNameTemp.ToUpper();
-
+       
 
         ArtChar1.SetActive(false);
 		SallyHalfAwake.SetActive(false);
@@ -47,7 +45,9 @@ public class Scene1Conversation : MonoBehaviour
 		
 		ArtBG1.SetActive(true);
         nextButton.SetActive(true);
-		
+		 string pNameTemp= gameHandler.GetName();
+        playerName = pNameTemp.ToUpper();
+
         
         
         
@@ -67,7 +67,7 @@ public class Scene1Conversation : MonoBehaviour
     //Story Units:
     public void talking()
     {         // main story function. Players hit next to progress to next int
-       
+       Char1name.text=playerName;
         primeInt = primeInt + 1;
         if (primeInt == 1)
         {
@@ -77,7 +77,7 @@ public class Scene1Conversation : MonoBehaviour
         {
             ArtChar1.SetActive(false);
             DialogueDisplay.SetActive(true);
-            Char1name.text = playerName;
+            //Char1name.text = playerName;
             Char1speech.text = "Wakey wakey, Sally";
             Char2name.text = "";
             Char2speech.text = "";
@@ -93,7 +93,7 @@ public class Scene1Conversation : MonoBehaviour
         }
         else if (primeInt == 4)
         {
-            Char1name.text = "YOU";
+            Char1name.text = playerName;
             Char1speech.text = "I've been watching you dead asleep.HAHAHAA";
             Char2name.text = "";
             Char2speech.text = "";
@@ -110,7 +110,7 @@ public class Scene1Conversation : MonoBehaviour
         }
         else if (primeInt == 6)
         {
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = "What is going to get you out of bed?";
             Char2name.text = "";
             Char2speech.text = "";
@@ -124,7 +124,7 @@ public class Scene1Conversation : MonoBehaviour
         }
         else if (primeInt == 8)
         {
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = "How about a cup of coffee?";
             Char2name.text = "";
             Char2speech.text = "";
@@ -139,7 +139,7 @@ public class Scene1Conversation : MonoBehaviour
 
         else if (primeInt == 10)
         {
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = "How about a cup of your favorite coffee?";
             Char2name.text = "";
             Char2speech.text = "";
@@ -156,7 +156,7 @@ public class Scene1Conversation : MonoBehaviour
 
         else if (primeInt == 12)
         {
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = "How about a cup of almond lattee?";
             Char2name.text = "";
             Char2speech.text = "";
@@ -172,7 +172,7 @@ public class Scene1Conversation : MonoBehaviour
 
         else if (primeInt == 14)
         {
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = "How about a cup of sugar free almond latte?";
             Char2name.text = "";
             Char2speech.text = "";
@@ -190,7 +190,7 @@ public class Scene1Conversation : MonoBehaviour
         // ENCOUNTER AFTER CHOICE #1
         else if (primeInt == 100)
         {
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = "Let me check your kitchen...";
             Char2name.text = "";
             Char2speech.text = "";
@@ -204,7 +204,7 @@ public class Scene1Conversation : MonoBehaviour
         }
         else if (primeInt == 102)
         {
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = "Sally, you ran out of COFFEEEEE";
             Char2name.text = "";
             Char2speech.text = "";
@@ -220,7 +220,7 @@ public class Scene1Conversation : MonoBehaviour
 
         else if (primeInt == 104)
         {
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = "Human kitchen has plenty of coffee. If you really want the coffee, we need to head there.";
             Char2name.text = "";
             Char2speech.text = "";
@@ -247,7 +247,7 @@ public class Scene1Conversation : MonoBehaviour
 
         else if (primeInt == 201)
         {
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = "What did I do now?";
             Char2name.text = "";
             Char2speech.text = "";
@@ -263,7 +263,7 @@ public class Scene1Conversation : MonoBehaviour
 
         else if (primeInt == 203)
         {
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = "I don't touch that junk. I'm lactose intolerant, remember?";
             Char2name.text = "";
             Char2speech.text = "";
@@ -279,7 +279,7 @@ public class Scene1Conversation : MonoBehaviour
 
         else if (primeInt == 205)
         {
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = "FINE, let's go there. I'm not scared.";
             Char2name.text = "";
             Char2speech.text = "";

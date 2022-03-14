@@ -265,7 +265,7 @@ else if (primeInt == 212){
 //FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch scenes)
        public void Choice1aFunct(){
                DialogueDisplay.SetActive(true);	   
-			   GameHandler.playerStat =GameHandler.playerStat+1;
+			  // GameHandler.playerStat =GameHandler.playerStat+1;
 			   smilingmouse.SetActive(false);
 			   ArtChar1.SetActive(false);
 			   Char1name.text = "";

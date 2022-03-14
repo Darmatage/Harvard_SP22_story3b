@@ -247,6 +247,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   primeInt: 1
+  playerName: 
+  gameHandler: {fileID: 224382942}
   Char1name: {fileID: 1773313602}
   Char1speech: {fileID: 511422061}
   Char2name: {fileID: 1439079377}

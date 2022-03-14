@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.3587269, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1581,6 +1581,8 @@ MonoBehaviour:
   Choice1a: {fileID: 1592773992}
   NextScene1Button: {fileID: 664151820}
   nextButton: {fileID: 1373922948}
+  gameHandler: {fileID: 686123122}
+  playerName: 
 --- !u!114 &1371548665
 MonoBehaviour:
   m_ObjectHideFlags: 0

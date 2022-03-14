@@ -260,6 +260,8 @@ MonoBehaviour:
   NextScene1Button: {fileID: 1568421465}
   NextScene2Button: {fileID: 749365997}
   nextButton: {fileID: 1411531041}
+  gameHandler: {fileID: 1627500819}
+  playerName: 
 --- !u!1 &333487215
 GameObject:
   m_ObjectHideFlags: 0

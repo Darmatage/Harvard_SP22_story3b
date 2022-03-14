@@ -27,6 +27,7 @@ public class Scene4bDialogue : MonoBehaviour {
         public GameObject ButtonScene3b;
         public GameObject nextButton;
        public GameHandler gameHandler;
+	    public string playerName;
        //public AudioSource audioSource;
         private bool allowSpace = true;
 
@@ -45,6 +46,8 @@ void Start(){         // initial visibility settings
 		
         DialogueDisplay.SetActive(false);
 		ArtBG1.SetActive(true);
+		 string pNameTemp = gameHandler.GetName();
+       playerName = pNameTemp.ToUpper();
         
         
 		
@@ -69,7 +72,7 @@ public void talking(){         // main story function. Players hit next to progr
         //else if (primeInt == 2){
 			   // ArtChar1.SetActive(true);
              //   DialogueDisplay.SetActive(true);
-             //   Char1name.text = "YOU";
+             //   Char1name.text = playerName;
               //  Char1speech.text = "THAT cake smells delectable";
               //  Char2name.text = "";
               //  Char2speech.text = "";
@@ -91,7 +94,7 @@ public void talking(){         // main story function. Players hit next to progr
 			   // ArtChar1.SetActive(true);
 			    ArtChar1.SetActive(false);
                 DialogueDisplay.SetActive(true);
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "You know we both can’t have that stuff!";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -107,7 +110,7 @@ public void talking(){         // main story function. Players hit next to progr
 			   // ArtChar1.SetActive(true);
 			    smilingmouse.SetActive(false);
                 DialogueDisplay.SetActive(true);
-                Char1name.text = "YOU";
+                Char1name.text = playerName;
                 Char1speech.text = "Wait…what is that at the back of the fridge?";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -127,7 +130,7 @@ public void talking(){         // main story function. Players hit next to progr
        }
       else if (primeInt == 102){
                ArtChar1.SetActive(false);
-			   Char1name.text = "YOU";
+			   Char1name.text = playerName;
                Char1speech.text = "No...no...beside it...";
                Char2name.text = "";
                Char2speech.text = "";
@@ -163,7 +166,7 @@ public void talking(){         // main story function. Players hit next to progr
 	  /*else if (primeInt == 201){
 		  sallyDissatisfied.SetActive(false);
                smilingmouse.SetActive(false);
-			   Char1name.text = "YOU";
+			   Char1name.text = playerName;
                Char1speech.text = "But Sally?";
                Char2name.text = "";
                Char2speech.text = "";
@@ -179,7 +182,7 @@ public void talking(){         // main story function. Players hit next to progr
 	  else if (primeInt == 203){
                ArtChar1.SetActive(false);
 			   ArtChar1.SetActive(false);
-			   Char1name.text = "YOU";
+			   Char1name.text = playerName;
                Char1speech.text = "Why would there ever be cheese under the table?";
                Char2name.text = "";
                Char2speech.text = "";
@@ -193,7 +196,7 @@ public void talking(){         // main story function. Players hit next to progr
 	  }
 	  else if (primeInt == 205){
                ArtChar1.SetActive(false);
-			   Char1name.text = "YOU";
+			   Char1name.text = playerName;
                Char1speech.text = "It does smell fresh…could be a recent drop?";
                Char2name.text = "";
                Char2speech.text = "";
@@ -209,7 +212,7 @@ public void talking(){         // main story function. Players hit next to progr
 	else if (primeInt == 207){
                ArtChar1.SetActive(false);
 			   smilingmouse.SetActive(false);
-			   Char1name.text = "YOU";
+			   Char1name.text = playerName;
                Char1speech.text = "What about this sweet-smelling cake right here, and the LATTE we want to make?";
                Char2name.text = "";
                Char2speech.text = "";
@@ -223,7 +226,7 @@ public void talking(){         // main story function. Players hit next to progr
 	   }
 	   else if (primeInt == 209){
                smilingmouse.SetActive(false);
-			   Char1name.text = "YOU";
+			   Char1name.text = playerName;
                Char1speech.text = "How about we just get cake and make coffee?";
                Char2name.text = "";
                Char2speech.text = "";
@@ -243,7 +246,7 @@ public void talking(){         // main story function. Players hit next to progr
 	   else if (primeInt == 302){
                ArtChar1.SetActive(false);
 			   smilingmouse.SetActive(false);
-			   Char1name.text = "YOU";
+			   Char1name.text = playerName;
                Char1speech.text = "No Sally!";
                Char2name.text = "";
                Char2speech.text = "";
@@ -259,7 +262,7 @@ public void talking(){         // main story function. Players hit next to progr
                ArtChar1.SetActive(false);
 			   sallyDissatisfied.SetActive(false);
 			   smilingmouse.SetActive(false);
-			   Char1name.text = "YOU";
+			   Char1name.text = playerName;
                Char1speech.text = "I’d rather take the almond milk. AND we need our sweetener.";
                Char2name.text = "";
                Char2speech.text = "";
@@ -274,7 +277,7 @@ public void talking(){         // main story function. Players hit next to progr
 	 else if (primeInt == 306){
                ArtChar1.SetActive(false);
 			   smilingmouse.SetActive(false);
-			   Char1name.text = "YOU";
+			   Char1name.text = playerName;
                Char1speech.text = "NOOO Sally! The Chef just baked cake and will spot us if we get close.";
                Char2name.text = "";
                Char2speech.text = "";
@@ -290,7 +293,7 @@ public void talking(){         // main story function. Players hit next to progr
                ArtChar1.SetActive(false);
 			   smilingmouse.SetActive(false);
 			   sallyDissatisfied.SetActive(false);
-			   Char1name.text = "YOU";
+			   Char1name.text = playerName;
                Char1speech.text = "Yes I remember he's been hiding them there, because his spouse would rather have him eat regular sugar.";
                Char2name.text = "";
                Char2speech.text = "";
@@ -306,7 +309,7 @@ public void talking(){         // main story function. Players hit next to progr
                ArtChar1.SetActive(false);
 			   smilingmouse.SetActive(false);
 			   sallyDissatisfied.SetActive(false);
-			   Char1name.text = "YOU";
+			   Char1name.text = playerName;
                Char1speech.text = "ALMOND milk, please!";
                Char2name.text = "";
                Char2speech.text = "";
@@ -321,7 +324,7 @@ public void talking(){         // main story function. Players hit next to progr
        public void Choice1aFunct(){
                smilingmouse.SetActive(false);
 			   ArtChar1.SetActive(false);
-			   Char1name.text = "YOU";
+			   Char1name.text = playerName;
                Char1speech.text = "No...beside that.";
                Char2name.text = "";
                Char2speech.text = "";
@@ -334,7 +337,7 @@ public void talking(){         // main story function. Players hit next to progr
 	    public void Choice2aFunct(){
                smilingmouse.SetActive(false);
 			   ArtChar1.SetActive(false);
-			   Char1name.text = "YOU";
+			   Char1name.text = playerName;
                Char1speech.text = "Maybe grab what's closer? Almond milk IS way far back and it's getting cold in here.";
                Char2name.text = "";
                Char2speech.text = "";
@@ -348,7 +351,7 @@ public void talking(){         // main story function. Players hit next to progr
        public void Choice1bFunct(){
                smilingmouse.SetActive(false);
 			   ArtChar1.SetActive(false);
-			   Char1name.text = "YOU";
+			   Char1name.text = playerName;
                Char1speech.text = "No, beside it...";
                Char2name.text = "";
                Char2speech.text = "";
@@ -361,7 +364,7 @@ public void talking(){         // main story function. Players hit next to progr
 	   public void Choice2bFunct(){
                smilingmouse.SetActive(false);
 			   ArtChar1.SetActive(false);
-			   Char1name.text = "YOU";
+			   Char1name.text = playerName;
                Char1speech.text = "True...it is further than regular milk. And it is getting cold in here.";
                Char2name.text = "";
                Char2speech.text = "";
