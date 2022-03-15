@@ -102,7 +102,7 @@ public class Scene3aDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "Oh shush. I just woke up, Give me a break!";
+            Char2speech.text = "Oh shush. Stay focused! Where is coffee?";
             //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 6)
@@ -110,7 +110,7 @@ public class Scene3aDialogue : MonoBehaviour
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(false);
             Char1name.text = playerName;
-            Char1speech.text = "Ah no, your stinky little place needs a window. ";
+            Char1speech.text = "It’s somewhere. ";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -121,14 +121,14 @@ public class Scene3aDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "The window will get fixed soon.";
+            Char2speech.text = "Not helpful! Looks like I’m not the only one who is blind.";
         }
         else if (primeInt == 8)
         {
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(false);
             Char1name.text = playerName;
-            Char1speech.text = "You’ve been saying that for weeks.  ";
+            Char1speech.text = "It is way up, on the top shelf.";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -139,7 +139,7 @@ public class Scene3aDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "Stay focused! We are finding coffee.  ";
+            Char2speech.text = "Sniffs like roasted coffee beans.";
         }
 
         else if (primeInt == 10)
@@ -147,89 +147,10 @@ public class Scene3aDialogue : MonoBehaviour
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(false);
             Char1name.text = playerName;
-            Char1speech.text = "Where is it?";
+            Char1speech.text = "I can trust your nose.";
             Char2name.text = "";
             Char2speech.text = "";
-        }
 
-
-        else if (primeInt == 11)
-        {
-            ArtChar1.SetActive(false);
-            ArtChar2.SetActive(true);
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Sally";
-            Char2speech.text = " It’s somewhere. ";
-        }
-
-        else if (primeInt == 12)
-        {
-            ArtChar1.SetActive(true);
-            ArtChar2.SetActive(false);
-            Char1name.text = playerName;
-            Char1speech.text = "Not helpful! ";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-
-        else if (primeInt == 13)
-        {
-            ArtChar1.SetActive(false);
-            ArtChar2.SetActive(true);
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Sally";
-            Char2speech.text = "The smell is from the shelves. ";
-        }
-
-        else if (primeInt == 14)
-        {
-            ArtChar1.SetActive(true);
-            ArtChar2.SetActive(false);
-            Char1name.text = playerName;
-            Char1speech.text = "Hm. Let’s go up and see!";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 15)
-        {
-            ArtChar1.SetActive(false);
-            ArtChar2.SetActive(true);
-            Char1name.text = "Sally";
-            Char1speech.text = "Oh, I got it! It’s on the top shelf.";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-
-        else if (primeInt == 16)
-        {
-            ArtChar1.SetActive(true);
-            ArtChar2.SetActive(false);
-            Char1name.text = playerName;
-            Char1speech.text = "Sniffs like roasted coffee beans.";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-
-        else if (primeInt == 17)
-        {
-            ArtChar1.SetActive(false);
-            ArtChar2.SetActive(true);
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Sally";
-            Char2speech.text = "Wait… found it! ";
-        }
-
-        else if (primeInt == 18)
-        {
-            ArtChar1.SetActive(true);
-            ArtChar2.SetActive(false);
-            Char1name.text = playerName;
-            Char1speech.text = "Should we head back and make coffee, OR should we head to the fridge for milk?”";
-            Char2name.text = "";
-            Char2speech.text = "";
 
             // Turn off "Next" button, turn on "Choice" buttons
             nextButton.SetActive(false);
@@ -257,7 +178,7 @@ public class Scene3aDialogue : MonoBehaviour
         else if (primeInt == 102)
         {
             Char1name.text = playerName;
-            Char1speech.text = "Do you see anyone else here?";
+            Char1speech.text = " I don’t want humans to see us.";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -267,13 +188,13 @@ public class Scene3aDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = " I’m fetching the coffee grinder.";
+            Char2speech.text = "Do you see anyone else here?";
         }
 
         else if (primeInt == 104)
         {
             Char1name.text = playerName;
-            Char1speech.text = " That’s a good idea. ";
+            Char1speech.text = "Just hurry up.";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -283,14 +204,14 @@ public class Scene3aDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = " You see. I am a clever mouse. ";
+            Char2speech.text = "I got the coffee. I am getting the coffee grinder. ";
 
         }
 
         else if (primeInt == 106)
         {
             Char1name.text = playerName;
-            Char1speech.text = " Ah,fine. You are the smartest mouse in the whole wide world!";
+            Char1speech.text = "That’s the best idea you had all morning!";
             Char2name.text = "";
             Char2speech.text = "";
 
@@ -301,13 +222,13 @@ public class Scene3aDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "I thought you wanted to make me coffee.";
+            Char2speech.text = "You see. I am a clever mouse. ";
         }
 
         else if (primeInt == 108)
         {
             Char1name.text = playerName;
-            Char1speech.text = "Hm, seems like you are more into it than I am.";
+            Char1speech.text = "Ah, fine. You are the smartest mouse in the whole wide world!";
             Char2name.text = "";
             Char2speech.text = "";
             nextButton.SetActive(false);
@@ -344,7 +265,7 @@ public class Scene3aDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "I will show you pictures when we get back.";
+            Char2speech.text = "I will show you the pictures when we get back.";
         }
 
         else if (primeInt == 204)

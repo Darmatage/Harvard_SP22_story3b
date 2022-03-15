@@ -78,40 +78,40 @@ public class Scene1Conversation : MonoBehaviour
             ArtChar1.SetActive(false);
             DialogueDisplay.SetActive(true);
             //Char1name.text = playerName;
-            Char1speech.text = "Wakey wakey, Sally";
+            Char1speech.text = "zzzZZZZ";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 3)
         {
             SallyHalfAwake.SetActive(true);
-			Char1name.text = "";
+            Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "Wuh..? What happened?";
+            Char2speech.text = "Wake up, wake up!";
             //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 4)
         {
             Char1name.text = playerName;
-            Char1speech.text = "I've been watching you dead asleep.HAHAHAA";
+            Char1speech.text = "Wuh..? What happened?";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 5)
         {
             SallyHalfAwake.SetActive(false);
-			ArtChar1.SetActive(true);
-			Char1name.text = "";
+            ArtChar1.SetActive(true);
+            Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "That is creepy!!!";
+            Char2speech.text = "I've been watching you dead asleep. ";
             //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 6)
         {
             Char1name.text = playerName;
-            Char1speech.text = "What is going to get you out of bed?";
+            Char1speech.text = "Why would you do that?";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -120,12 +120,12 @@ public class Scene1Conversation : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "Why do you think I can keep awake?";
+            Char2speech.text = "I am waiting for the moment to wake you up!";
         }
         else if (primeInt == 8)
         {
             Char1name.text = playerName;
-            Char1speech.text = "How about a cup of coffee?";
+            Char1speech.text = "Find something better to do! ";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -134,13 +134,13 @@ public class Scene1Conversation : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "I will think about it...";
+            Char2speech.text = "What is going to get you out of bed?";
         }
 
         else if (primeInt == 10)
         {
             Char1name.text = playerName;
-            Char1speech.text = "How about a cup of your favorite coffee?";
+            Char1speech.text = "Why do you think I can keep awake?";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -151,13 +151,13 @@ public class Scene1Conversation : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "Hm... that's getting warmer.";
+            Char2speech.text = "How about a cup of coffee?";
         }
 
         else if (primeInt == 12)
         {
             Char1name.text = playerName;
-            Char1speech.text = "How about a cup of almond lattee?";
+            Char1speech.text = "I will think about it...";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -167,15 +167,32 @@ public class Scene1Conversation : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "I like where this is going...";
+            Char2speech.text = "How about a cup of your favorite coffee?";
         }
 
         else if (primeInt == 14)
         {
             Char1name.text = playerName;
-            Char1speech.text = "How about a cup of sugar free almond latte?";
+            Char1speech.text = "Hm... that's getting warmer.";
             Char2name.text = "";
             Char2speech.text = "";
+        }
+
+        else if (primeInt == 15)
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "I like where this is going...";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+
+        else if (primeInt == 16)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Sally";
+            Char2speech.text = "How about a cup of sugar free almond latte?";
+
             // Turn off "Next" button, turn on "Choice" buttons
             nextButton.SetActive(false);
             allowSpace = false;
@@ -185,13 +202,11 @@ public class Scene1Conversation : MonoBehaviour
 
 
 
-
-
         // ENCOUNTER AFTER CHOICE #1
         else if (primeInt == 100)
         {
             Char1name.text = playerName;
-            Char1speech.text = "Let me check your kitchen...";
+            Char1speech.text = "Sally, you better find coffee before I get out of bed.";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -200,12 +215,12 @@ public class Scene1Conversation : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "zzzZZZ";
+            Char2speech.text = "I?m on it!";
         }
         else if (primeInt == 102)
         {
             Char1name.text = playerName;
-            Char1speech.text = "Sally, you ran out of COFFEEEEE";
+            Char1speech.text = "What is taking so long?";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -215,13 +230,13 @@ public class Scene1Conversation : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "Quit the yelling. The roof is not falling down.";
+            Char2speech.text = "I can?t find any coffee!";
         }
 
         else if (primeInt == 104)
         {
             Char1name.text = playerName;
-            Char1speech.text = "Human kitchen has plenty of coffee. If you really want the coffee, we need to head there.";
+            Char1speech.text = "Sally, I can't keep my eyes open...";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -230,7 +245,47 @@ public class Scene1Conversation : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "That's the best idea you had ALLLLLL morning!";
+            Char2speech.text = "No. You are coming with me. ";
+        }
+
+        else if (primeInt == 106)
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "Why?";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+
+        else if (primeInt == 107)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Sally";
+            Char2speech.text = "We are getting coffee in the human kitchen!";
+        }
+
+        else if (primeInt == 108)
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "I'd rather sleep.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+
+        else if (primeInt == 109)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Sally";
+            Char2speech.text = "I saw the chef putting in a new patch of coffee yesterday! ";
+        }
+
+        else if (primeInt == 110)
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "Oh, Oh! Why didn?t you say that earlier?";
+            Char2name.text = "";
+            Char2speech.text = "";
 
             nextButton.SetActive(false);
             allowSpace = false;
@@ -239,51 +294,94 @@ public class Scene1Conversation : MonoBehaviour
 
         else if (primeInt == 200)
         {
+            Char1name.text = playerName;
+            Char1speech.text = "Sally, you better find milk before I get out of bed.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+
+        else if (primeInt == 201)
+        {
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
             Char2speech.text = "Are you serious?!";
         }
 
-        else if (primeInt == 201)
-        {
-            Char1name.text = playerName;
-            Char1speech.text = "What did I do now?";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-
         else if (primeInt == 202)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Sally";
-            Char2speech.text = "Did you gulf down all of the milk?!?";
+            Char1name.text = playerName;
+            Char1speech.text = "You are yelling, Sally. I?m still in bed.";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
 
         else if (primeInt == 203)
         {
-            Char1name.text = playerName;
-            Char1speech.text = "I don't touch that junk. I'm lactose intolerant, remember?";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Sally";
+            Char2speech.text = "Where is the leftover milk?!?";
         }
 
         else if (primeInt == 204)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Sally";
-            Char2speech.text = "Well, if my stuff is junk, only the human kitchen has your P R E C I O U S milk";
+            Char1name.text = playerName;
+            Char1speech.text = "My eardrum...the roof is not falling down.";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
 
         else if (primeInt == 205)
         {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Sally";
+            Char2speech.text = "You need to tell me when something is running out. ";
+        }
+
+        else if (primeInt == 206)
+        {
             Char1name.text = playerName;
-            Char1speech.text = "FINE, let's go there. I'm not scared.";
+            Char1speech.text = "That is definitely NOT me!  I'm lactose intolerant, remember?";
             Char2name.text = "";
             Char2speech.text = "";
-            nextButton.SetActive(false);
+        }
+
+
+        else if (primeInt == 207)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Sally";
+            Char2speech.text = "Oh, that is right.";
+        }
+
+        else if (primeInt == 208)
+        {
+            Char1name.text = playerName;
+            Char1speech.text = "Sally, I need an apology. ";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+
+
+        else if (primeInt == 209)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Sally";
+            Char2speech.text = "Fine, sorry! Only the human kitchen has your lactose free milk. ";
+        }
+
+        else if (primeInt == 210)
+        {
+            Char1name.text = playerName ;
+            Char1speech.text = "Let?s go then. I?m not scared. ";
+            Char2name.text = "";
+            Char2speech.text = "";
+        
+        nextButton.SetActive(false);
             allowSpace = false;
             NextScene1Button.SetActive(true);
         }

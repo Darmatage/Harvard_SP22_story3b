@@ -71,7 +71,7 @@ public class Scene4aDialogue : MonoBehaviour
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(false);
             DialogueDisplay.SetActive(true);
-            Char1name.text = "YOU";
+            Char1name.text = playerName ;
             Char1speech.text = "This is disgusting!";
             Char2name.text = "";
             Char2speech.text = "";
@@ -90,7 +90,7 @@ public class Scene4aDialogue : MonoBehaviour
         {
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(false);
-            Char1name.text = "YOU";
+            Char1name.text = playerName;
             Char1speech.text = "Ah, I thought it was the right place. ";
             Char2name.text = "";
             Char2speech.text = "";
@@ -109,7 +109,7 @@ public class Scene4aDialogue : MonoBehaviour
         {
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(false);
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = "Wait. I think we need almond milk!";
             Char2name.text = "";
             Char2speech.text = "";
@@ -127,7 +127,7 @@ public class Scene4aDialogue : MonoBehaviour
         {
             ArtChar1.SetActive(true);
             ArtChar2.SetActive(false);
-            Char1name.text = "You";
+            Char1name.text = playerName;
             Char1speech.text = "And some sweetener for my fair mouse. ";
             Char2name.text = "";
             Char2speech.text = "";
