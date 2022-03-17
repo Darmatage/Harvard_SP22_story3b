@@ -20,6 +20,7 @@ public class Scene1Conversation : MonoBehaviour
     public GameObject DialogueDisplay;
     public GameObject ArtChar1;
     public GameObject SallyHalfAwake;
+    public GameObject SallyHalfAwakeCoffee;
     public GameObject ArtBG1;
     public GameObject Choice1a;
     public GameObject Choice1b;
@@ -37,7 +38,8 @@ public class Scene1Conversation : MonoBehaviour
 
         ArtChar1.SetActive(false);
 		SallyHalfAwake.SetActive(false);
-		DialogueDisplay.SetActive(false);
+        SallyHalfAwakeCoffee.SetActive(false);
+        DialogueDisplay.SetActive(false);
 		Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         NextScene1Button.SetActive(false);
@@ -156,6 +158,7 @@ public class Scene1Conversation : MonoBehaviour
 
         else if (primeInt == 12)
         {
+            SallyHalfAwakeCoffee.SetActive(true);
             Char1name.text = playerName;
             Char1speech.text = "I will think about it...";
             Char2name.text = "";
@@ -180,13 +183,21 @@ public class Scene1Conversation : MonoBehaviour
 
         else if (primeInt == 15)
         {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Sally";
+            Char2speech.text = "How about a cup of almond latte?";
+        }
+
+        else if (primeInt == 16)
+        {
             Char1name.text = playerName;
             Char1speech.text = "I like where this is going...";
             Char2name.text = "";
             Char2speech.text = "";
         }
 
-        else if (primeInt == 16)
+        else if (primeInt == 17)
         {
             Char1name.text = "";
             Char1speech.text = "";
@@ -215,7 +226,7 @@ public class Scene1Conversation : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "I?m on it!";
+            Char2speech.text = "I am on it!";
         }
         else if (primeInt == 102)
         {
@@ -230,13 +241,13 @@ public class Scene1Conversation : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "I can?t find any coffee!";
+            Char2speech.text = "I cannot find any coffee!";
         }
 
         else if (primeInt == 104)
         {
             Char1name.text = playerName;
-            Char1speech.text = "Sally, I can't keep my eyes open...";
+            Char1speech.text = "Sally, I cannot keep my eyes open...";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -267,7 +278,7 @@ public class Scene1Conversation : MonoBehaviour
         else if (primeInt == 108)
         {
             Char1name.text = playerName;
-            Char1speech.text = "I'd rather sleep.";
+            Char1speech.text = "I would rather sleep.";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -283,7 +294,7 @@ public class Scene1Conversation : MonoBehaviour
         else if (primeInt == 110)
         {
             Char1name.text = playerName;
-            Char1speech.text = "Oh, Oh! Why didn?t you say that earlier?";
+            Char1speech.text = "Oh, Oh! You could have said that earlier!";
             Char2name.text = "";
             Char2speech.text = "";
 
@@ -311,7 +322,7 @@ public class Scene1Conversation : MonoBehaviour
         else if (primeInt == 202)
         {
             Char1name.text = playerName;
-            Char1speech.text = "You are yelling, Sally. I?m still in bed.";
+            Char1speech.text = "You are yelling, Sally. I am still in bed.";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -377,7 +388,7 @@ public class Scene1Conversation : MonoBehaviour
         else if (primeInt == 210)
         {
             Char1name.text = playerName ;
-            Char1speech.text = "Let?s go then. I?m not scared. ";
+            Char1speech.text = "Let us go then. I am not scared. ";
             Char2name.text = "";
             Char2speech.text = "";
         

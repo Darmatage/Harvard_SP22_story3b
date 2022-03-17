@@ -17,6 +17,8 @@ public class Scene4aDialogue : MonoBehaviour
     public GameObject DialogueDisplay;
     public GameObject ArtChar1;
     public GameObject ArtChar2;
+    public GameObject SallyPuzzled;
+    public GameObject SallyDissatisfied;
     public GameObject ArtBG1;
     public GameObject Choice1a;
     //public GameObject Choice1b;
@@ -33,6 +35,8 @@ public class Scene4aDialogue : MonoBehaviour
     {         // initial visibility settings
         ArtChar1.SetActive(false);
         ArtChar2.SetActive(false);
+        SallyPuzzled.SetActive(false);
+        SallyDissatisfied.SetActive(false);
         DialogueDisplay.SetActive(false);
         Choice1a.SetActive(false);
         //Choice1b.SetActive(false);
@@ -78,8 +82,8 @@ public class Scene4aDialogue : MonoBehaviour
         }
         else if (primeInt == 3)
         {
-            ArtChar1.SetActive(false);
-            ArtChar2.SetActive(true);
+            ArtChar1.SetActive(true);
+            ArtChar2.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
@@ -88,8 +92,9 @@ public class Scene4aDialogue : MonoBehaviour
         }
         else if (primeInt == 4)
         {
-            ArtChar1.SetActive(true);
+            ArtChar1.SetActive(false);
             ArtChar2.SetActive(false);
+            SallyPuzzled.SetActive(true);
             Char1name.text = playerName;
             Char1speech.text = "Ah, I thought it was the right place. ";
             Char2name.text = "";
@@ -98,7 +103,9 @@ public class Scene4aDialogue : MonoBehaviour
         else if (primeInt == 5)
         {
             ArtChar1.SetActive(false);
-            ArtChar2.SetActive(true);
+            ArtChar2.SetActive(false);
+            SallyPuzzled.SetActive(false);
+            SallyDissatisfied.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
@@ -107,8 +114,11 @@ public class Scene4aDialogue : MonoBehaviour
         }
         else if (primeInt == 6)
         {
-            ArtChar1.SetActive(true);
+            ArtChar1.SetActive(false);
             ArtChar2.SetActive(false);
+            SallyDissatisfied.SetActive(false);
+            SallyPuzzled.SetActive(true);
+            
             Char1name.text = playerName;
             Char1speech.text = "Wait. I think we need almond milk!";
             Char2name.text = "";
@@ -117,7 +127,9 @@ public class Scene4aDialogue : MonoBehaviour
         else if (primeInt == 7)
         {
             ArtChar1.SetActive(false);
-            ArtChar2.SetActive(true);
+            ArtChar2.SetActive(false);
+            SallyPuzzled.SetActive(false);
+            SallyDissatisfied.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
@@ -125,8 +137,11 @@ public class Scene4aDialogue : MonoBehaviour
         }
         else if (primeInt == 8)
         {
-            ArtChar1.SetActive(true);
+            ArtChar1.SetActive(false);
             ArtChar2.SetActive(false);
+            SallyDissatisfied.SetActive(false);
+            SallyPuzzled.SetActive(true);
+            
             Char1name.text = playerName;
             Char1speech.text = "And some sweetener for my fair mouse. ";
             Char2name.text = "";

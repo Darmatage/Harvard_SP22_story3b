@@ -15,8 +15,11 @@ public class Scene3aDialogue : MonoBehaviour
     //public Text Char3name;
     //public Text Char3speech;
     public GameObject DialogueDisplay;
-    public GameObject ArtChar1;
-    public GameObject ArtChar2;
+    public GameObject SallyScreaming;
+    public GameObject SallyWink;
+    public GameObject SallyExhilarated;
+    public GameObject SallyHappy;
+
     public GameObject ArtBG1;
     public GameObject Choice1a;
     public GameObject Choice1b;
@@ -31,8 +34,10 @@ public class Scene3aDialogue : MonoBehaviour
 
     void Start()
     {         // initial visibility settings
-        ArtChar1.SetActive(false);
-        ArtChar2.SetActive(false);
+        SallyScreaming.SetActive(false);
+        SallyWink.SetActive(false);
+        SallyExhilarated.SetActive(false);
+        SallyHappy.SetActive(false);
         DialogueDisplay.SetActive(false);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -68,8 +73,9 @@ public class Scene3aDialogue : MonoBehaviour
         else if (primeInt == 2)
         {
 
-            ArtChar1.SetActive(true);
-            ArtChar2.SetActive(false);
+            SallyExhilarated.SetActive(true);
+            SallyWink.SetActive(false);
+            SallyScreaming.SetActive(false);
             DialogueDisplay.SetActive(true);
             Char1name.text = playerName;
             Char1speech.text = "The pantry I’m waiting for! ";
@@ -78,8 +84,9 @@ public class Scene3aDialogue : MonoBehaviour
         }
         else if (primeInt == 3)
         {
-            ArtChar1.SetActive(false);
-            ArtChar2.SetActive(true);
+            SallyExhilarated.SetActive(false);
+            SallyWink.SetActive(true);
+            SallyScreaming.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
@@ -88,8 +95,9 @@ public class Scene3aDialogue : MonoBehaviour
         }
         else if (primeInt == 4)
         {
-            ArtChar1.SetActive(true);
-            ArtChar2.SetActive(false);
+            SallyExhilarated.SetActive(false);
+            SallyWink.SetActive(false);
+            SallyScreaming.SetActive(false);
             Char1name.text = playerName;
             Char1speech.text = "Sally, when did you get blind?";
             Char2name.text = "";
@@ -97,8 +105,9 @@ public class Scene3aDialogue : MonoBehaviour
         }
         else if (primeInt == 5)
         {
-            ArtChar1.SetActive(false);
-            ArtChar2.SetActive(true);
+            SallyExhilarated.SetActive(false);
+            SallyWink.SetActive(false);
+            SallyScreaming.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
@@ -107,8 +116,9 @@ public class Scene3aDialogue : MonoBehaviour
         }
         else if (primeInt == 6)
         {
-            ArtChar1.SetActive(true);
-            ArtChar2.SetActive(false);
+            SallyExhilarated.SetActive(false);
+            SallyWink.SetActive(false);
+            SallyScreaming.SetActive(false);
             Char1name.text = playerName;
             Char1speech.text = "It’s somewhere. ";
             Char2name.text = "";
@@ -116,8 +126,9 @@ public class Scene3aDialogue : MonoBehaviour
         }
         else if (primeInt == 7)
         {
-            ArtChar1.SetActive(false);
-            ArtChar2.SetActive(true);
+            SallyExhilarated.SetActive(false);
+            SallyWink.SetActive(false);
+            SallyScreaming.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
@@ -125,8 +136,9 @@ public class Scene3aDialogue : MonoBehaviour
         }
         else if (primeInt == 8)
         {
-            ArtChar1.SetActive(true);
-            ArtChar2.SetActive(false);
+            SallyExhilarated.SetActive(false);
+            SallyWink.SetActive(true);
+            SallyScreaming.SetActive(false);
             Char1name.text = playerName;
             Char1speech.text = "It is way up, on the top shelf.";
             Char2name.text = "";
@@ -134,8 +146,9 @@ public class Scene3aDialogue : MonoBehaviour
         }
         else if (primeInt == 9)
         {
-            ArtChar1.SetActive(false);
-            ArtChar2.SetActive(true);
+            SallyExhilarated.SetActive(false);
+            SallyWink.SetActive(false);
+            SallyScreaming.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
@@ -144,8 +157,9 @@ public class Scene3aDialogue : MonoBehaviour
 
         else if (primeInt == 10)
         {
-            ArtChar1.SetActive(true);
-            ArtChar2.SetActive(false);
+            SallyExhilarated.SetActive(false);
+            SallyWink.SetActive(false);
+            SallyScreaming.SetActive(false);
             Char1name.text = playerName;
             Char1speech.text = "I can trust your nose.";
             Char2name.text = "";
@@ -201,6 +215,9 @@ public class Scene3aDialogue : MonoBehaviour
 
         else if (primeInt == 105)
         {
+            SallyExhilarated.SetActive(false);
+            SallyWink.SetActive(false);
+            SallyScreaming.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
@@ -210,6 +227,7 @@ public class Scene3aDialogue : MonoBehaviour
 
         else if (primeInt == 106)
         {
+            SallyHappy.SetActive(true);
             Char1name.text = playerName;
             Char1speech.text = "That’s the best idea you had all morning!";
             Char2name.text = "";
@@ -246,6 +264,7 @@ public class Scene3aDialogue : MonoBehaviour
 
         else if (primeInt == 201)
         {
+            SallyHappy.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
@@ -254,6 +273,7 @@ public class Scene3aDialogue : MonoBehaviour
 
         else if (primeInt == 202)
         {
+            SallyHappy.SetActive(false);
             Char1name.text = playerName;
             Char1speech.text = "Yeah, right. ";
             Char2name.text = "";
@@ -278,6 +298,7 @@ public class Scene3aDialogue : MonoBehaviour
 
         else if (primeInt == 205)
         {
+            SallyWink.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
