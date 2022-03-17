@@ -15,8 +15,12 @@ public class Scene4cDialogue : MonoBehaviour
     //public Text Char3name;
     //public Text Char3speech;
     public GameObject DialogueDisplay;
-    public GameObject ArtChar1;
-    public GameObject ArtChar2;
+    public GameObject SallyExhilarated;
+    public GameObject SallyPuzzled;
+    public GameObject SallyHappy;
+    public GameObject SallyShouting;
+    public GameObject SallyWink;
+    public GameObject SallyDissatisfied;
     public GameObject ArtBG1;
     public GameObject Choice1a;
     public GameObject Choice1b;
@@ -30,8 +34,12 @@ public class Scene4cDialogue : MonoBehaviour
 
     void Start()
     {         // initial visibility settings
-        ArtChar1.SetActive(false);
-        ArtChar2.SetActive(false);
+        SallyExhilarated.SetActive(false);
+        SallyPuzzled.SetActive(false);
+        SallyHappy.SetActive(false);
+        SallyShouting.SetActive(false);
+        SallyWink.SetActive(false);
+        SallyDissatisfied.SetActive(false);
         DialogueDisplay.SetActive(false);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -66,10 +74,13 @@ public class Scene4cDialogue : MonoBehaviour
         }
         else if (primeInt == 2)
         {
-
-            ArtChar1.SetActive(true);
-            ArtChar2.SetActive(false);
             DialogueDisplay.SetActive(true);
+            SallyWink.SetActive(true);
+            SallyDissatisfied.SetActive(false);
+            SallyExhilarated.SetActive(false);
+            SallyPuzzled.SetActive(false);
+            SallyHappy.SetActive(false);
+            SallyShouting.SetActive(false);
             Char1name.text = playerName;
             Char1speech.text = "Let’s see what is here...";
             Char2name.text = "";
@@ -77,8 +88,12 @@ public class Scene4cDialogue : MonoBehaviour
         }
         else if (primeInt == 3)
         {
-            ArtChar1.SetActive(false);
-            ArtChar2.SetActive(true);
+            SallyWink.SetActive(false);
+            SallyExhilarated.SetActive(true);
+            SallyDissatisfied.SetActive(false);
+            SallyPuzzled.SetActive(false);
+            SallyHappy.SetActive(false);
+            SallyShouting.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
@@ -87,8 +102,14 @@ public class Scene4cDialogue : MonoBehaviour
         }
         else if (primeInt == 4)
         {
-            ArtChar1.SetActive(true);
-            ArtChar2.SetActive(false);
+            SallyWink.SetActive(false);
+            SallyExhilarated.SetActive(true);
+            SallyWink.SetActive(false);
+            SallyDissatisfied.SetActive(false);
+            SallyPuzzled.SetActive(false);
+            SallyHappy.SetActive(false);
+            SallyShouting.SetActive(false);
+
             Char1name.text = playerName;
             Char1speech.text = "You are seeing what I’m seeing. ";
             Char2name.text = "";
@@ -96,8 +117,13 @@ public class Scene4cDialogue : MonoBehaviour
         }
         else if (primeInt == 5)
         {
-            ArtChar1.SetActive(false);
-            ArtChar2.SetActive(true);
+            SallyWink.SetActive(false);
+            SallyExhilarated.SetActive(false);
+            SallyWink.SetActive(false);
+            SallyDissatisfied.SetActive(false);
+            SallyPuzzled.SetActive(false);
+            SallyHappy.SetActive(true);
+            SallyShouting.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
@@ -106,8 +132,13 @@ public class Scene4cDialogue : MonoBehaviour
         }
         else if (primeInt == 6)
         {
-            ArtChar1.SetActive(true);
-            ArtChar2.SetActive(false);
+            SallyWink.SetActive(false);
+            SallyExhilarated.SetActive(false);
+            SallyWink.SetActive(false);
+            SallyDissatisfied.SetActive(false);
+            SallyPuzzled.SetActive(false);
+            SallyHappy.SetActive(false);
+            SallyShouting.SetActive(false);
             Char1name.text = playerName;
             Char1speech.text = "Stating the obvious…";
             Char2name.text = "";
@@ -115,8 +146,14 @@ public class Scene4cDialogue : MonoBehaviour
         }
         else if (primeInt == 7)
         {
-            ArtChar1.SetActive(false);
-            ArtChar2.SetActive(true);
+            SallyWink.SetActive(false);
+            SallyExhilarated.SetActive(false);
+            SallyShouting.SetActive(true);
+            SallyDissatisfied.SetActive(false);
+            SallyPuzzled.SetActive(false);
+            SallyHappy.SetActive(false);
+         
+
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
@@ -124,8 +161,14 @@ public class Scene4cDialogue : MonoBehaviour
         }
         else if (primeInt == 8)
         {
-            ArtChar1.SetActive(true);
-            ArtChar2.SetActive(false);
+            
+            SallyExhilarated.SetActive(false);
+            SallyShouting.SetActive(false);
+            SallyWink.SetActive(true);
+            SallyDissatisfied.SetActive(false);
+            SallyPuzzled.SetActive(false);
+            SallyHappy.SetActive(false);
+
             Char1name.text = playerName;
             Char1speech.text = "I know you like the mild and sweet kind.";
             Char2name.text = "";
@@ -133,8 +176,12 @@ public class Scene4cDialogue : MonoBehaviour
         }
         else if (primeInt == 9)
         {
-            ArtChar1.SetActive(false);
-            ArtChar2.SetActive(true);
+            SallyWink.SetActive(false);
+            SallyExhilarated.SetActive(true);
+            SallyShouting.SetActive(false);
+            SallyDissatisfied.SetActive(false);
+            SallyPuzzled.SetActive(false);
+            SallyHappy.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
@@ -143,8 +190,13 @@ public class Scene4cDialogue : MonoBehaviour
 
         else if (primeInt == 10)
         {
-            ArtChar1.SetActive(true);
-            ArtChar2.SetActive(false);
+            SallyWink.SetActive(false);
+            SallyExhilarated.SetActive(false);
+            SallyShouting.SetActive(false);
+            SallyPuzzled.SetActive(true);
+            SallyHappy.SetActive(false);
+            SallyDissatisfied.SetActive(false);
+
             Char1name.text = playerName;
             Char1speech.text = "I’m not sure… What if it is bad? ";
             Char2name.text = "";
@@ -154,8 +206,13 @@ public class Scene4cDialogue : MonoBehaviour
 
         else if (primeInt == 11)
         {
-            ArtChar1.SetActive(false);
-            ArtChar2.SetActive(true);
+            SallyWink.SetActive(false);
+            SallyExhilarated.SetActive(false);
+            SallyShouting.SetActive(false);
+            SallyPuzzled.SetActive(false);
+            SallyHappy.SetActive(true);
+            SallyDissatisfied.SetActive(false);
+
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
@@ -164,8 +221,8 @@ public class Scene4cDialogue : MonoBehaviour
 
         else if (primeInt == 12)
         {
-            ArtChar1.SetActive(true);
-            ArtChar2.SetActive(false);
+
+            SallyHappy.SetActive(true);
             Char1name.text = playerName;
             Char1speech.text = "Ah, I admit it was delicious. ";
             Char2name.text = "";
@@ -174,8 +231,7 @@ public class Scene4cDialogue : MonoBehaviour
 
         else if (primeInt == 13)
         {
-            ArtChar1.SetActive(false);
-            ArtChar2.SetActive(true);
+
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
@@ -184,8 +240,12 @@ public class Scene4cDialogue : MonoBehaviour
 
         else if (primeInt == 14)
         {
-            ArtChar1.SetActive(true);
-            ArtChar2.SetActive(false);
+            SallyHappy.SetActive(false);
+            SallyWink.SetActive(false);
+            SallyExhilarated.SetActive(false);
+            SallyShouting.SetActive(false);
+            SallyPuzzled.SetActive(true);
+   
             Char1name.text = playerName;
             Char1speech.text = "But we haven’t explored the pantry. ";
             Char2name.text = "";
@@ -193,8 +253,11 @@ public class Scene4cDialogue : MonoBehaviour
         }
         else if (primeInt == 15)
         {
-            ArtChar1.SetActive(false);
-            ArtChar2.SetActive(true);
+            SallyWink.SetActive(false);
+            SallyExhilarated.SetActive(false);
+            SallyPuzzled.SetActive(false);
+            SallyHappy.SetActive(false);
+            SallyShouting.SetActive(true);
             Char1name.text = "Sally";
             Char1speech.text = "Stop being silly! The pantry won’t have cheese.";
             Char2name.text = "";
@@ -203,8 +266,12 @@ public class Scene4cDialogue : MonoBehaviour
 
         else if (primeInt == 16)
         {
-            ArtChar1.SetActive(true);
-            ArtChar2.SetActive(false);
+            SallyWink.SetActive(false);
+            SallyExhilarated.SetActive(false);
+            SallyPuzzled.SetActive(true);
+            SallyHappy.SetActive(false);
+            SallyShouting.SetActive(false);
+            SallyDissatisfied.SetActive(false);
             Char1name.text = playerName;
             Char1speech.text = "But the pantry… ";
             Char2name.text = "";
@@ -213,8 +280,14 @@ public class Scene4cDialogue : MonoBehaviour
 
         else if (primeInt == 17)
         {
-            ArtChar1.SetActive(false);
-            ArtChar2.SetActive(true);
+            SallyDissatisfied.SetActive(false);
+            SallyWink.SetActive(false);
+            SallyExhilarated.SetActive(true);
+            SallyPuzzled.SetActive(false);
+            SallyHappy.SetActive(false);
+            SallyShouting.SetActive(false);
+           
+
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
@@ -231,6 +304,13 @@ public class Scene4cDialogue : MonoBehaviour
         // ENCOUNTER AFTER CHOICE #1
         else if (primeInt == 100)
         {
+            SallyDissatisfied.SetActive(false);
+            SallyWink.SetActive(false);
+            SallyExhilarated.SetActive(false);
+            SallyPuzzled.SetActive(true);
+            SallyHappy.SetActive(false);
+            SallyShouting.SetActive(false);
+
             Char1name.text = playerName;
             Char1speech.text = "Hmmm…something doesn’t seem right.";
             Char2name.text = "";
@@ -253,6 +333,12 @@ public class Scene4cDialogue : MonoBehaviour
 
         else if (primeInt == 103)
         {
+            SallyDissatisfied.SetActive(false);
+            SallyWink.SetActive(false);
+            SallyExhilarated.SetActive(false);
+            SallyPuzzled.SetActive(false);
+            SallyHappy.SetActive(true);
+            SallyShouting.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
@@ -276,6 +362,12 @@ public class Scene4cDialogue : MonoBehaviour
        //ENCOUNTER AFTER CHOICE #2
         else if (primeInt == 200)
         {
+            SallyDissatisfied.SetActive(false);
+            SallyWink.SetActive(false);
+            SallyExhilarated.SetActive(true);
+            SallyPuzzled.SetActive(false);
+            SallyHappy.SetActive(true);
+            SallyShouting.SetActive(false);
             Char1name.text = playerName;
             Char1speech.text = "I’m excited about the pantry!";
             Char2name.text = "";
@@ -284,6 +376,12 @@ public class Scene4cDialogue : MonoBehaviour
 
         else if (primeInt == 201)
         {
+            SallyHappy.SetActive(false);
+            SallyDissatisfied.SetActive(true);
+            SallyWink.SetActive(false);
+            SallyExhilarated.SetActive(true);
+            SallyPuzzled.SetActive(false);
+            SallyShouting.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
@@ -292,6 +390,13 @@ public class Scene4cDialogue : MonoBehaviour
 
         else if (primeInt == 202)
         {
+            SallyExhilarated.SetActive(false);
+            SallyDissatisfied.SetActive(false);
+            SallyHappy.SetActive(true);
+            SallyWink.SetActive(false);
+            SallyPuzzled.SetActive(false);
+            SallyShouting.SetActive(false);
+
             Char1name.text = playerName;
             Char1speech.text = "The pantry will have so much more to choose from. ";
             Char2name.text = "";
@@ -300,6 +405,13 @@ public class Scene4cDialogue : MonoBehaviour
 
         else if (primeInt == 203)
         {
+            SallyExhilarated.SetActive(false);
+            SallyHappy.SetActive(false);
+            SallyDissatisfied.SetActive(true);
+            SallyWink.SetActive(false);
+            SallyPuzzled.SetActive(false);
+            SallyShouting.SetActive(false);
+
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
@@ -308,6 +420,13 @@ public class Scene4cDialogue : MonoBehaviour
 
         else if (primeInt == 204)
         {
+            SallyDissatisfied.SetActive(false);
+            SallyExhilarated.SetActive(false);
+            SallyHappy.SetActive(true);
+            SallyWink.SetActive(false);
+            SallyPuzzled.SetActive(false);
+            SallyShouting.SetActive(false);
+
             Char1name.text = playerName;
             Char1speech.text = "I will make it up to you, I promise! ";
             Char2name.text = "";
@@ -316,6 +435,12 @@ public class Scene4cDialogue : MonoBehaviour
 
         else if (primeInt == 205)
         {
+            SallyDissatisfied.SetActive(false);
+            SallyExhilarated.SetActive(false);
+            SallyHappy.SetActive(false);
+            SallyWink.SetActive(true);
+            SallyPuzzled.SetActive(false);
+            SallyShouting.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
