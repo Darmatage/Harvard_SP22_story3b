@@ -219,9 +219,9 @@ RectTransform:
   - {fileID: 903309927}
   - {fileID: 1324253667}
   - {fileID: 1354535596}
+  - {fileID: 166863254}
   - {fileID: 72007274}
   - {fileID: 137882750}
-  - {fileID: 166863254}
   - {fileID: 938030553}
   - {fileID: 1411531045}
   - {fileID: 1615891988}
@@ -300,7 +300,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 40581315}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -375,11 +375,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 40581315}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 334, y: 0}
+  m_AnchoredPosition: {x: 300, y: 0}
   m_SizeDelta: {x: 1280, y: 720}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &137882751
@@ -450,12 +450,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 40581315}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 383, y: -68}
-  m_SizeDelta: {x: 656.7101, y: 600.43}
+  m_AnchoredPosition: {x: 360.70703, y: -78}
+  m_SizeDelta: {x: 596.774, y: 588.3007}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &166863255
 MonoBehaviour:
@@ -802,7 +802,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Go to Pantry
+  m_Text: Position towards pantry
 --- !u!222 &513337483
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1151,8 +1151,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -43, y: -23}
-  m_SizeDelta: {x: 350, y: 80}
+  m_AnchoredPosition: {x: -47, y: -0}
+  m_SizeDelta: {x: 350, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &846242561
 PrefabInstance:
@@ -1163,11 +1163,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4991227169897420866, guid: 8cdbe343c82614121b4845ce8fa0a3e8, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4991227170169186345, guid: 8cdbe343c82614121b4845ce8fa0a3e8, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4991227170822847734, guid: 8cdbe343c82614121b4845ce8fa0a3e8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1180,6 +1180,10 @@ PrefabInstance:
     - target: {fileID: 4991227171051508002, guid: 8cdbe343c82614121b4845ce8fa0a3e8, type: 3}
       propertyPath: m_Name
       value: PauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991227171051508002, guid: 8cdbe343c82614121b4845ce8fa0a3e8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4991227171051508005, guid: 8cdbe343c82614121b4845ce8fa0a3e8, type: 3}
       propertyPath: m_Pivot.x
@@ -1729,7 +1733,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Get CHEESE! '
+  m_Text: Approach cheese
 --- !u!222 &1144928313
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2740,7 +2744,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Kitchen Pantry
+  m_Text: Head towards pantry
 --- !u!222 &1883621332
 CanvasRenderer:
   m_ObjectHideFlags: 0

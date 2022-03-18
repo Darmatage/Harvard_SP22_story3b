@@ -369,7 +369,7 @@ public class Scene1Conversation : MonoBehaviour
         else if (primeInt == 101)
         {
             SallyHalfAwakeCoffee.SetActive(false);
-            SallyHalfAwake.SetActive(true);
+            SallyHalfAwake.SetActive(false);
             SallyShouting.SetActive(false);
             SallyWakingUp.SetActive(false);
             SallyWink.SetActive(false);
@@ -381,7 +381,7 @@ public class Scene1Conversation : MonoBehaviour
             Char2speech.text = "";
         }
 
-        else if (primeInt == 103)
+        else if (primeInt == 102)
         {
             SallyHalfAwakeCoffee.SetActive(false);
             SallyHalfAwake.SetActive(false);
@@ -397,11 +397,11 @@ public class Scene1Conversation : MonoBehaviour
             Char2speech.text = "I cannot find any coffee!";
         }
 
-        else if (primeInt == 104)
+        else if (primeInt == 103)
         {
             SallyHalfAwakeCoffee.SetActive(false);
             SallyShouting.SetActive(false);
-            SallyWakingUp.SetActive(true);
+            SallyWakingUp.SetActive(false);
             SallyWink.SetActive(false);
             SallyHappy.SetActive(false);
             SallyDissatisfied.SetActive(false);
@@ -412,7 +412,7 @@ public class Scene1Conversation : MonoBehaviour
             Char2name.text = "";
             Char2speech.text = "";
         }
-        else if (primeInt == 105)
+        else if (primeInt == 104)
         {
             SallyHalfAwake.SetActive(false);
             SallyHalfAwakeCoffee.SetActive(false);
@@ -425,10 +425,10 @@ public class Scene1Conversation : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "You are coming with me nonetheless. ";
+            Char2speech.text = "You are coming with me regardless. ";
         }
 
-        else if (primeInt == 106)
+        else if (primeInt == 105)
         {
             SallyHalfAwake.SetActive(false);
             SallyHalfAwakeCoffee.SetActive(false);
@@ -437,7 +437,7 @@ public class Scene1Conversation : MonoBehaviour
             SallyWink.SetActive(false);
             SallyHappy.SetActive(false);
             SallyDissatisfied.SetActive(false);
-            SallyPuzzled.SetActive(true);
+            SallyPuzzled.SetActive(false);
 
             Char1name.text = playerName;
             Char1speech.text = "Why?";
@@ -445,7 +445,7 @@ public class Scene1Conversation : MonoBehaviour
             Char2speech.text = "";
         }
 
-        else if (primeInt == 107)
+        else if (primeInt == 106)
         {
             SallyHalfAwake.SetActive(false);
             SallyHalfAwakeCoffee.SetActive(false);
@@ -462,7 +462,7 @@ public class Scene1Conversation : MonoBehaviour
             Char2speech.text = "We are getting coffee in the human kitchen!";
         }
 
-        else if (primeInt == 108)
+        else if (primeInt == 107)
         {
             SallyHalfAwake.SetActive(false);
             SallyHalfAwakeCoffee.SetActive(false);
@@ -479,7 +479,7 @@ public class Scene1Conversation : MonoBehaviour
             Char2speech.text = "";
         }
 
-        else if (primeInt == 109)
+        else if (primeInt == 108)
         {
             SallyHalfAwake.SetActive(false);
             SallyHalfAwakeCoffee.SetActive(false);
@@ -496,7 +496,7 @@ public class Scene1Conversation : MonoBehaviour
             Char2speech.text = "I saw the chef putting in a new patch of coffee yesterday! ";
         }
 
-        else if (primeInt == 110)
+        else if (primeInt == 109)
         {
             SallyHalfAwake.SetActive(false);
             SallyHalfAwakeCoffee.SetActive(false);
@@ -508,7 +508,7 @@ public class Scene1Conversation : MonoBehaviour
             SallyPuzzled.SetActive(false);
 
             Char1name.text = playerName;
-            Char1speech.text = "Oh, Oh! You could have said that earlier!";
+            Char1speech.text = "Oh, oh! You could have said that earlier!";
             Char2name.text = "";
             Char2speech.text = "";
 

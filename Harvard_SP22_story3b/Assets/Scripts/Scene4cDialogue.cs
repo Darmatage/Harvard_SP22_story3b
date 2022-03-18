@@ -103,11 +103,11 @@ public class Scene4cDialogue : MonoBehaviour
         else if (primeInt == 4)
         {
             SallyWink.SetActive(false);
-            SallyExhilarated.SetActive(true);
+            SallyExhilarated.SetActive(false);
             SallyWink.SetActive(false);
             SallyDissatisfied.SetActive(false);
             SallyPuzzled.SetActive(false);
-            SallyHappy.SetActive(false);
+            SallyHappy.SetActive(true);
             SallyShouting.SetActive(false);
 
             Char1name.text = playerName;
@@ -132,13 +132,14 @@ public class Scene4cDialogue : MonoBehaviour
         }
         else if (primeInt == 6)
         {
-            SallyWink.SetActive(false);
+            
             SallyExhilarated.SetActive(false);
             SallyWink.SetActive(false);
             SallyDissatisfied.SetActive(false);
             SallyPuzzled.SetActive(false);
             SallyHappy.SetActive(false);
             SallyShouting.SetActive(false);
+            SallyWink.SetActive(true);
             Char1name.text = playerName;
             Char1speech.text = "Stating the obvious…";
             Char2name.text = "";
@@ -164,10 +165,10 @@ public class Scene4cDialogue : MonoBehaviour
             
             SallyExhilarated.SetActive(false);
             SallyShouting.SetActive(false);
-            SallyWink.SetActive(true);
+            SallyWink.SetActive(false);
             SallyDissatisfied.SetActive(false);
             SallyPuzzled.SetActive(false);
-            SallyHappy.SetActive(false);
+            SallyHappy.SetActive(true);
 
             Char1name.text = playerName;
             Char1speech.text = "I know you like the mild and sweet kind.";
@@ -318,6 +319,13 @@ public class Scene4cDialogue : MonoBehaviour
         }
         else if (primeInt == 101)
         {
+            SallyPuzzled.SetActive(false);
+            SallyDissatisfied.SetActive(true);
+            SallyWink.SetActive(false);
+            SallyExhilarated.SetActive(false);
+            SallyHappy.SetActive(false);
+            SallyShouting.SetActive(false);
+
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
@@ -325,6 +333,12 @@ public class Scene4cDialogue : MonoBehaviour
         }
         else if (primeInt == 102)
         {
+            SallyDissatisfied.SetActive(false);
+            SallyPuzzled.SetActive(true);
+            SallyWink.SetActive(false);
+            SallyExhilarated.SetActive(false);
+            SallyHappy.SetActive(false);
+            SallyShouting.SetActive(false);
             Char1name.text = playerName;
             Char1speech.text = "Usually cheese has other crumbs around it.";
             Char2name.text = "";
@@ -335,10 +349,10 @@ public class Scene4cDialogue : MonoBehaviour
         {
             SallyDissatisfied.SetActive(false);
             SallyWink.SetActive(false);
-            SallyExhilarated.SetActive(false);
             SallyPuzzled.SetActive(false);
-            SallyHappy.SetActive(true);
+            SallyHappy.SetActive(false);
             SallyShouting.SetActive(false);
+            SallyExhilarated.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
@@ -347,6 +361,13 @@ public class Scene4cDialogue : MonoBehaviour
 
         else if (primeInt == 104)
         {
+            SallyExhilarated.SetActive(false);
+            SallyDissatisfied.SetActive(false);
+            SallyWink.SetActive(false);
+            SallyPuzzled.SetActive(false);
+            SallyHappy.SetActive(true);
+            SallyShouting.SetActive(false);
+
             Char1name.text = playerName;
             Char1speech.text = " Ah, if it makes you happy…";
             Char2name.text = "";
@@ -379,7 +400,7 @@ public class Scene4cDialogue : MonoBehaviour
             SallyHappy.SetActive(false);
             SallyDissatisfied.SetActive(true);
             SallyWink.SetActive(false);
-            SallyExhilarated.SetActive(true);
+            SallyExhilarated.SetActive(false);
             SallyPuzzled.SetActive(false);
             SallyShouting.SetActive(false);
             Char1name.text = "";
@@ -435,10 +456,10 @@ public class Scene4cDialogue : MonoBehaviour
 
         else if (primeInt == 205)
         {
-            SallyDissatisfied.SetActive(false);
-            SallyExhilarated.SetActive(false);
             SallyHappy.SetActive(false);
-            SallyWink.SetActive(true);
+            SallyExhilarated.SetActive(false);
+            SallyDissatisfied.SetActive(true);
+            SallyWink.SetActive(false);
             SallyPuzzled.SetActive(false);
             SallyShouting.SetActive(false);
             Char1name.text = "";
