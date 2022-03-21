@@ -135,7 +135,7 @@ public class Scene3aDialogue : MonoBehaviour
         }
         else if (primeInt == 6)
         {
-            SallyShouting.SetActive(true);
+            SallyShouting.SetActive(false);
             SallyExhilarated.SetActive(false);
             SallyWink.SetActive(true);
             SallyScreaming.SetActive(false);
@@ -215,8 +215,8 @@ public class Scene3aDialogue : MonoBehaviour
             SallyExhilarated.SetActive(false);
             SallyWink.SetActive(false);
             SallyScreaming.SetActive(false);
-            SallyHappy.SetActive(false);
-            SallyDissatisfied.SetActive(true);
+            SallyHappy.SetActive(true);
+            SallyDissatisfied.SetActive(false);
 
             Char1name.text = playerName;
             Char1speech.text = "Will you hurry up?";
@@ -244,9 +244,9 @@ public class Scene3aDialogue : MonoBehaviour
             SallyDissatisfied.SetActive(false);
             SallyShouting.SetActive(false);
             SallyExhilarated.SetActive(false);
-            SallyWink.SetActive(true);
+            SallyWink.SetActive(false);
             SallyScreaming.SetActive(false);
-            SallyHappy.SetActive(false);
+            SallyHappy.SetActive(true);
 
             Char1name.text = playerName;
             Char1speech.text = " Keep it low, Sally. I don’t want humans to see us.";
@@ -256,13 +256,14 @@ public class Scene3aDialogue : MonoBehaviour
 
         else if (primeInt == 103)
         {
-            SallyFurious.SetActive(false);
+            
             SallyDissatisfied.SetActive(true);
             SallyShouting.SetActive(false);
             SallyExhilarated.SetActive(false);
             SallyWink.SetActive(false);
             SallyScreaming.SetActive(false);
             SallyHappy.SetActive(false);
+            SallyFurious.SetActive(true);
 
             Char1name.text = "";
             Char1speech.text = "";
@@ -272,6 +273,7 @@ public class Scene3aDialogue : MonoBehaviour
 
         else if (primeInt == 104)
         {
+            SallyFurious.SetActive(false);
             SallyDissatisfied.SetActive(false);
             SallyShouting.SetActive(false);
             SallyExhilarated.SetActive(false);
@@ -297,11 +299,44 @@ public class Scene3aDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
-            Char2speech.text = "Fine, I will keep it low. Guess what? I already got coffee. I am fetching the coffee grinder. ";
+            Char2speech.text = "Fine, I will keep it low.";
 
         }
 
         else if (primeInt == 106)
+        {
+            
+            SallyDissatisfied.SetActive(false);
+            SallyShouting.SetActive(false);
+            SallyExhilarated.SetActive(false);
+            SallyWink.SetActive(false);
+            SallyScreaming.SetActive(false);
+            SallyHappy.SetActive(true);
+
+            Char1name.text = playerName;
+            Char1speech.text = "How are you doing, Sally?";
+            Char2name.text = "";
+            Char2speech.text = "";
+
+        }
+
+        else if (primeInt == 107)
+        {
+            SallyHappy.SetActive(false);
+            SallyDissatisfied.SetActive(false);
+            SallyShouting.SetActive(true);
+            SallyExhilarated.SetActive(false);
+            SallyWink.SetActive(false);
+            SallyScreaming.SetActive(false);
+
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Sally";
+            Char2speech.text = "I already got coffee. I am fetching the coffee grinder. ";
+
+        }
+
+        else if (primeInt == 108)
         {
             
             SallyDissatisfied.SetActive(false);
@@ -318,7 +353,7 @@ public class Scene3aDialogue : MonoBehaviour
 
         }
 
-        else if (primeInt == 107)
+        else if (primeInt == 109)
         {
             SallyDissatisfied.SetActive(false);
             SallyShouting.SetActive(false);
@@ -333,7 +368,7 @@ public class Scene3aDialogue : MonoBehaviour
             Char2speech.text = "You see. I am a clever mouse. ";
         }
 
-        else if (primeInt == 108)
+        else if (primeInt == 110)
         {
             SallyDissatisfied.SetActive(false);
             SallyShouting.SetActive(false);

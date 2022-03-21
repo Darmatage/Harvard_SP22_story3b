@@ -21,6 +21,7 @@ public class Scene4cDialogue : MonoBehaviour
     public GameObject SallyShouting;
     public GameObject SallyWink;
     public GameObject SallyDissatisfied;
+    public GameObject SallyCrying;
     public GameObject ArtBG1;
     public GameObject Choice1a;
     public GameObject Choice1b;
@@ -40,6 +41,7 @@ public class Scene4cDialogue : MonoBehaviour
         SallyShouting.SetActive(false);
         SallyWink.SetActive(false);
         SallyDissatisfied.SetActive(false);
+        SallyCrying.SetActive(false);
         DialogueDisplay.SetActive(false);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -403,6 +405,7 @@ public class Scene4cDialogue : MonoBehaviour
             SallyExhilarated.SetActive(false);
             SallyPuzzled.SetActive(false);
             SallyShouting.SetActive(false);
+            SallyCrying.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Sally";
@@ -411,6 +414,7 @@ public class Scene4cDialogue : MonoBehaviour
 
         else if (primeInt == 202)
         {
+            SallyCrying.SetActive(false);
             SallyExhilarated.SetActive(false);
             SallyDissatisfied.SetActive(false);
             SallyHappy.SetActive(true);
@@ -428,10 +432,11 @@ public class Scene4cDialogue : MonoBehaviour
         {
             SallyExhilarated.SetActive(false);
             SallyHappy.SetActive(false);
-            SallyDissatisfied.SetActive(true);
+            SallyDissatisfied.SetActive(false);
             SallyWink.SetActive(false);
             SallyPuzzled.SetActive(false);
             SallyShouting.SetActive(false);
+            SallyCrying.SetActive(true);
 
             Char1name.text = "";
             Char1speech.text = "";
@@ -441,6 +446,7 @@ public class Scene4cDialogue : MonoBehaviour
 
         else if (primeInt == 204)
         {
+            SallyCrying.SetActive(false);
             SallyDissatisfied.SetActive(false);
             SallyExhilarated.SetActive(false);
             SallyHappy.SetActive(true);
@@ -449,7 +455,7 @@ public class Scene4cDialogue : MonoBehaviour
             SallyShouting.SetActive(false);
 
             Char1name.text = playerName;
-            Char1speech.text = "I will make it up to you, I promise! ";
+            Char1speech.text = "I'm confident that we will find what we need! I will make it up to you, I promise! ";
             Char2name.text = "";
             Char2speech.text = "";
         }
