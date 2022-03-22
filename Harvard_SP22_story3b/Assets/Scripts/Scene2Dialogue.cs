@@ -75,7 +75,7 @@ public void talking(){         // main story function. Players hit next to progr
 				Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Sally";
-                Char2speech.text = "The kitchen looks alluring...";
+                Char2speech.text = "Do you smell that?";
 				nextButton.SetActive(false);
                allowSpace = false;
 				Choice1a.SetActive(true); // function Choice1aFunct()
@@ -133,12 +133,12 @@ public void talking(){         // main story function. Players hit next to progr
 			   Char1name.text = "";
                Char1speech.text = "";
                Char2name.text = "Sally";
-               Char2speech.text = "What? The kitchen IS alluring...";
+               Char2speech.text = "Sniff...sniff...";
        }
 	   else if (primeInt == 101){
                ArtChar1.SetActive(false);
 			   Char1name.text = playerName;
-               Char1speech.text = "I think the PANTRY would be safer...";
+               Char1speech.text = "Sniff...";
                Char2name.text = "";
                Char2speech.text = "";
        }
@@ -147,12 +147,12 @@ public void talking(){         // main story function. Players hit next to progr
 			   Char1name.text = "";
                Char1speech.text = "";
                Char2name.text = "Sally";
-               Char2speech.text = "Sniff...sniff...";
+               Char2speech.text = "It smells sweet";
 	  }
 	  else if (primeInt == 103){
                smilingmouse.SetActive(false);
 			   Char1name.text = playerName;
-               Char1speech.text = "NOW what is it, Sally?";
+               Char1speech.text = "It does...";
                Char2name.text = "";
                Char2speech.text = "";
 	  }
@@ -180,7 +180,7 @@ public void talking(){         // main story function. Players hit next to progr
 	  else if (primeInt == 107){
                ArtChar1.SetActive(false);
 			   Char1name.text = playerName;
-               Char1speech.text = "I still think we should head to the PANTRY instead.";
+               Char1speech.text = "What about the coffee in the pantry?";
                Char2name.text = "";
                Char2speech.text = "";
 	  }
@@ -272,7 +272,7 @@ public void talking(){         // main story function. Players hit next to progr
                smilingmouse.SetActive(false);
 			   ArtChar1.SetActive(false);
 			   Char1name.text = playerName;
-               Char1speech.text = "Sally, stay focused!";
+               Char1speech.text = "I do smell something...";
                Char2name.text = "";
                Char2speech.text = "";
                primeInt = 99;

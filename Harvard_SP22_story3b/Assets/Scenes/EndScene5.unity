@@ -970,6 +970,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 558438743397858172, guid: 8199a9b9dbdd88a48ba64770fbdb1f6d, type: 3}
+      propertyPath: mixer
+      value: 
+      objectReference: {fileID: 24100000, guid: 82fb6850549014f9eb5ea6983e49e874, type: 2}
     - target: {fileID: 3187192379024116036, guid: 8199a9b9dbdd88a48ba64770fbdb1f6d, type: 3}
       propertyPath: m_Name
       value: GameHandler

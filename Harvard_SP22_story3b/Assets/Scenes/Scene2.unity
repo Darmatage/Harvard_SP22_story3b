@@ -1361,7 +1361,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Yeah...it kinda does...
+  m_Text: follow the smell
 --- !u!222 &924817208
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2515,7 +2515,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: No it doesn't!
+  m_Text: consider the pantry
 --- !u!222 &1481744592
 CanvasRenderer:
   m_ObjectHideFlags: 0
