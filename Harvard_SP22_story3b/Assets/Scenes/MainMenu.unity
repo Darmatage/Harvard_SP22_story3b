@@ -418,9 +418,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9023709578374725620}
-        m_TargetAssemblyTypeName: GameHandler, Assembly-CSharp
-        m_MethodName: StartGame
+      - m_Target: {fileID: 1532018518}
+        m_TargetAssemblyTypeName: NameTransfer, Assembly-CSharp
+        m_MethodName: StoreName
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -430,9 +430,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1532018518}
-        m_TargetAssemblyTypeName: NameTransfer, Assembly-CSharp
-        m_MethodName: StoreName
+      - m_Target: {fileID: 9023709578374725620}
+        m_TargetAssemblyTypeName: GameHandler, Assembly-CSharp
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -864,7 +864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4991227171051508005, guid: 8cdbe343c82614121b4845ce8fa0a3e8, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4991227171051508005, guid: 8cdbe343c82614121b4845ce8fa0a3e8, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2174,7 +2174,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8583640361560224265, guid: 8199a9b9dbdd88a48ba64770fbdb1f6d, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8583640361560224265, guid: 8199a9b9dbdd88a48ba64770fbdb1f6d, type: 3}
       propertyPath: m_LocalScale.x

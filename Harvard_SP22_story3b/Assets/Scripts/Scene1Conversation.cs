@@ -96,7 +96,7 @@ public class Scene1Conversation : MonoBehaviour
 
             DialogueDisplay.SetActive(true);
 
-            //Char1name.text = playerName;
+            Char1name.text = playerName;
             Char1speech.text = "zzzZZZZ";
             Char2name.text = "";
             Char2speech.text = "";
